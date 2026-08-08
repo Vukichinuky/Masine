@@ -55,11 +55,13 @@ Kada je sinhroni generator vezan na veliku ("krutu") elektroenergetsku mrežu, m
 
 Ravnotežu diktira **bilans snage**: u stacionarnom (ustaljenom) stanju snaga koju pogonska mašina daje preko vratila mora biti jednaka električnoj snazi koju potrošač troši (uz zanemarene gubitke). Ako se te dve snage razlikuju, višak ili manjak snage ide u kinetičku energiju obrtnih masa — rotor ubrzava ili usporava sve dok se snage ponovo ne izjednače.
 
-Sledeća slika prikazuje ceo sistem iz ovog zadatka i vredi je "pročitati" pre računanja: levo je pogonska mašina (PM) kojoj upravljački sklop na osnovu zadatog kontrolnog napona $U_{\mathrm{kon}}$ (i merenja momenta $M_{\mathrm{pog}}$ i brzine $\omega$) određuje rad; ona preko vratila predaje mehaničku snagu $P_{\mathrm{pog}}$ sinhronom generatoru (SG); generator, čija je pobudna struja $I_{\mathrm{p}}$ konstantna (donji namotaj na slici), električnom snagom $P_{\mathrm{el}}$ napaja tri otpornika $R$ spregnuta u zvezdu (desno).
+Sledeća slika prikazuje ceo sistem iz ovog zadatka i vredi je "pročitati" pre računanja.
 
 ![Šema sistema: pogonska mašina PM sa upravljačkim sklopom, sinhroni generator SG sa konstantnom pobudom i tri otpornika R u zvezdi kao sopstvena mreža](../slike/fig-25.2.png)
 
 **Slika 25.2 —** Pogonska mašina i sinhroni generator sa sopstvenom mrežom u ovom zadatku.
+
+> **Kako čitati sliku 25.2:** Ovo je blok-šema celog sistema (bez brojčanih vrednosti) — čitaj je sleva nadesno, putem kojim teče snaga. Levo je krug **PM** (pogonska mašina). Iznad njega je pravougaonik „Upravljački sklop": sleva u njega ulazi strelica $U_{\mathrm{kon}}$ — kontrolni napon u voltima, naša „komanda gasa" — a zdesna mu se vraćaju izmereni moment $M_{\mathrm{pog}}$ (u $\mathrm{Nm}$) i ugaona brzina $\omega$ (u $\mathrm{rad/s}$); to je povratna sprega kojom sklop ostvaruje zadatu karakteristiku $M_{\mathrm{pog}} = 7220\cdot U_{\mathrm{kon}}/\omega$. PM je vratilom (pravougaonik na sredini vratila je spojnica) vezana za krug **SG** (sinhroni generator); strelica $P_{\mathrm{pog}}$ duž vratila označava mehaničku snagu koja se prenosi — po mini-lekciji 3, tačno $7220\ \mathrm{W}$ po svakom voltu komande. Ispod SG nacrtan je pobudni namotaj (kalem) sa oznakom $I_{\mathrm{p}} = \mathrm{const.}$ — pobudna struja se u celom zadatku ne menja, što je ključna činjenica za deo b) (EMS zavisi onda samo od brzine). Desno od SG tri voda nose električnu snagu $P_{\mathrm{el}}$ (strelica) ka tri otpornika $R$ (po $20\ \mathrm{\Omega}$, u delu b) $10\ \mathrm{\Omega}$) čiji su desni krajevi spojeni u zajednički čvor — zvezdište (sprega Y), pa je svaki otpornik na faznom naponu generatora. Šta treba da zaključiš: u ovom „ostrvu" jedina spoljašnja komanda je $U_{\mathrm{kon}}$; napon, frekvencija i struja nameštaju se sami, iz ravnoteže snaga $P_{\mathrm{pog}} = P_{\mathrm{el}}$.
 
 ### 2. Snaga trofaznog omskog potrošača u zvezdi
 
@@ -93,11 +95,13 @@ Naš potrošač je čisto omski, pa je struja $\underline{I}$ **u fazi** sa napo
 
 $$E_0 = \sqrt{U_{\mathrm{f}}^2 + (X_s \cdot I)^2},$$
 
-gde su $E_0$, $U_{\mathrm{f}}$ i $I$ efektivne vrednosti po fazi. Upravo to prikazuje sledeća slika: fazor struje $I$ i fazor napona $U$ leže na istom pravcu (vertikalno), fazor $jX_s \cdot I$ je zarotiran za $90^\circ$ ulevo (horizontalno, na vrhu), a $E_0$ je hipotenuza koja spaja početak sa vrhom — čitaj je kao geometrijski dokaz gornje Pitagorine formule.
+gde su $E_0$, $U_{\mathrm{f}}$ i $I$ efektivne vrednosti po fazi. Upravo to prikazuje sledeća slika — geometrijski dokaz gornje Pitagorine formule.
 
 ![Fazorski dijagram: U i I kolinearni, jXsI normalan na U, E0 hipotenuza pravouglog trougla](../slike/fig-25.1.png)
 
 **Slika 25.1 —** Fazorski dijagram turbogeneratora pri čisto aktivnom (omskom) opterećenju.
+
+> **Kako čitati sliku 25.1:** Fazorski dijagram po jednoj fazi (crno-bela skica, bez razmere); svaka strelica je fazor — dužina predstavlja efektivnu vrednost (u $\mathrm{V}$ za napone, u $\mathrm{A}$ za struju), a ugao fazni stav; smer rotacije fazora je suprotan kazaljci na satu, pa fazor zakrenut „ulevo" od drugog — prednjači. **Referentni fazor** je struja $\underline{I}$, nacrtana vertikalno naviše (donja strelica na desnoj ivici). Pošto je opterećenje čisto omsko, fazor napona $\underline{U}$ leži na istom pravcu, tačno iznad struje (kolinearni su: $\varphi = 0$, $\cos\varphi = 1$). Na vrh fazora $\underline{U}$ nadovezuje se pad napona $\mathrm{j}X_s\cdot\underline{I}$ — horizontalna strelica na samom vrhu, usmerena ulevo: množenje sa $\mathrm{j}$ zaokreće fazor struje za $90^\circ$ unapred, pa je taj pad **normalan** na $\underline{U}$. Duga kosa strelica iz zajedničkog početka do vrha tog lanca je EMS $\underline{E}_0$ — hipotenuza pravouglog trougla sa katetama $U_{\mathrm{f}}$ i $X_s I$; ugao između $\underline{U}$ i $\underline{E}_0$ je ugao snage (na skici nije posebno obeležen). Brojčano, u nazivnom režimu ovog zadatka: $U_{\mathrm{f}} = 219{,}39\ \mathrm{V}$, $X_s I = 1\cdot 10{,}97 = 10{,}97\ \mathrm{V}$, pa je $E_0 = \sqrt{219{,}39^2 + 10{,}97^2} = 219{,}67\ \mathrm{V}$ — kratka kateta je sitna prema dugoj, pa je hipotenuza jedva duža od $U_{\mathrm{f}}$ (na skici je pad $X_s I$ nacrtan preuveličano, da bi se uopšte video). Šta treba da zaključiš: kod čisto omskog opterećenja $E_0$, $U_{\mathrm{f}}$ i $X_s I$ vezuje Pitagorina teorema — upravo formula koju koristimo u koracima 4 i 7 (u koraku 7 sa $E_0$ i $X_s$ skaliranim na novu frekvenciju).
 
 ### 5. Zašto i $E_0$ i $X_s$ zavise od frekvencije
 

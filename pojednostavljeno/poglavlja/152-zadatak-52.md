@@ -410,12 +410,8 @@ $\Delta n$) više ne bi važila.
 **Šta smo dobili:** kompletan odgovor na deo a): $f_{sa} = 28{,}43\ \mathrm{Hz}$,
 $U_{sa} = 216{,}66\ \mathrm{V}$ (linijski), tj. $U_{sfa} = 125{,}09\ \mathrm{V}$ po fazi.
 
-Sledeća slika prikazuje upravo ovu situaciju: dve momentne krive — nazivnu (crvenu, za
-$f_s = 50\ \mathrm{Hz}$, radna tačka 1) i sniženu (ljubičastu, za $f_{sa} = 28{,}43\ \mathrm{Hz}$,
-radna tačka 2) — i horizontalnu liniju tereta $M_T = 26\ \mathrm{Nm}$. Čitaj je ovako: obe
-krive imaju **isti vrh** (isti $M_{pr}$, jer je $U/f$ isto) i obe seku liniju tereta na
-**istom rastojanju $\Delta n$** levo od svoje sinhrone brzine (strelice); snižavanjem
-učestanosti kriva se samo translira ulevo dok presek ne padne na željenih 750 min⁻¹.
+Sledeća slika prikazuje upravo ovu situaciju: obe momentne krive (nazivnu i sniženu), liniju
+tereta i račun koji smo upravo sproveli.
 
 ![Momentne karakteristike na 50 Hz i 28,43 Hz sa radnim tačkama 1 i 2 i istom razlikom brzina Δn](../slike/fig-52.1.png)
 
@@ -423,6 +419,8 @@ učestanosti kriva se samo translira ulevo dok presek ne padne na željenih 750 
 $U/f = \mathrm{const.}$: nazivna karakteristika ($f_s = 50\ \mathrm{Hz}$, tačka 1) i
 karakteristika pri $f_{sa} = 28{,}43\ \mathrm{Hz}$ (tačka 2); razlika brzina $\Delta n$
 prema liniji tereta $M_T$ ista je na obe krive.
+
+> **Kako čitati sliku 52.1:** Gornji deo slike je "radni list" iz zbirke — četiri jednačine kojima su izračunati $n_{sa} = 852{,}9\ \mathrm{min^{-1}}$, $f_{sa} = 28{,}43\ \mathrm{Hz}$, $U_{sfa} = 125{,}09\ \mathrm{V}$ i $U_{sa} = 216{,}66\ \mathrm{V}$ (isti brojevi kao u našim koracima 7–9). Donji deo je dijagram: na vodoravnoj osi je brzina obrtanja $n$ u $\mathrm{min^{-1}}$ (od 0 do 1500), na uspravnoj moment $M$ u $\mathrm{Nm}$ (od 0 do 80). **Crvena kriva** je momentna karakteristika na $f_s = 50\ \mathrm{Hz}$: polazni moment $\approx 54\ \mathrm{Nm}$ pri $n = 0$, vrh (prevalni moment $\approx 78\ \mathrm{Nm}$, Korak 3) na $n = n_s - \Delta n_{pr} = 1500 - 600 = 900\ \mathrm{min^{-1}}$, nula na sinhronoj brzini $1500\ \mathrm{min^{-1}}$. **Ljubičasta (magenta) kriva** je karakteristika na $f_{sa} = 28{,}43\ \mathrm{Hz}$: vrh **iste visine** $\approx 78\ \mathrm{Nm}$ (jer je odnos $U/f$ isti), nula na $n_{sa} = 852{,}9\ \mathrm{min^{-1}}$ (obeleženo $n_{sa}$ na osi). **Siva vodoravna linija** je teret $M_T = 26\ \mathrm{Nm}$ — potencijalni moment, isti na svakoj brzini. Radne tačke su preseci strmih grana sa linijom tereta: crni krug **1** na crvenoj krivoj, pri $n = 1500 - 102{,}9 \approx 1397\ \mathrm{min^{-1}}$, i crni krug **2** na ljubičastoj, pri traženih $n = 750\ \mathrm{min^{-1}}$; isprekidane vertikale obeležavaju njihove položaje. Parovi crvenih strelica sa oznakom $\Delta n$ pokazuju rastojanje svake radne tačke od "njene" sinhrone brzine — oba su iste dužine, $\Delta n = 102{,}9\ \mathrm{min^{-1}}$ (Korak 6). Šta treba da zaključiš: uz $U/f = \mathrm{const.}$ snižavanje učestanosti momentnu krivu samo **translira ulevo** (isti vrh, isti oblik, isto $\Delta n$ pod istim teretom), pa se željena brzina pogađa prostim izborom sinhrone brzine $n_{sa} = 750 + \Delta n$.
 
 ### Korak 10 (deo b): Sinhrona brzina za polazak sa maksimalnim ubrzanjem
 
@@ -465,12 +463,8 @@ $U_{sb} < U_{\mathrm{n}}$ i $f_{sb} < f_{\mathrm{n}}$, dakle sve dozvoljeno.
 **Šta smo dobili:** kompletan odgovor na deo b): start na $20\ \mathrm{Hz}$ i
 $152\ \mathrm{V}$ (linijski).
 
-Sledeća slika prikazuje polaznu situaciju: snižena (ljubičasta) kriva za
-$f_{sb} = 20\ \mathrm{Hz}$ nacrtana je tako da joj **vrh stoji tačno iznad $n = 0$** — motor
-iz mesta kreće sa prevalnim momentom; poređenja radi, nacrtana je i nazivna (crvena) kriva
-za 50 Hz, kod koje je isti razmak $\Delta n_{pr} = 600\ \mathrm{min^{-1}}$ (strelice) samo
-pomeren uz $n_s = 1500\ \mathrm{min^{-1}}$, pa je njen polazni moment znatno manji od
-prevalnog.
+Sledeća slika prikazuje polaznu situaciju iz dela b): sniženu krivu za start na 20 Hz pored
+nazivne krive za 50 Hz.
 
 ![Momentne karakteristike na 20 Hz i 50 Hz: vrh krive za 20 Hz je u n = 0, razmak Δn_pr isti kod obe](../slike/fig-52.2.png)
 
@@ -478,6 +472,8 @@ prevalnog.
 i učestanosti napajanja, uz uslov $U/f = \mathrm{const.}$: pri $f_{sb} = 20\ \mathrm{Hz}$
 prevalni moment se razvija tačno pri $n = 0$; rastojanje $\Delta n_{pr}$ od sinhrone brzine
 do vrha isto je kao kod nazivne krive.
+
+> **Kako čitati sliku 52.2:** Organizacija je ista kao na slici 52.1: iznad dijagrama su dve jednačine iz zbirke ($f_{sb} = 20\ \mathrm{Hz}$ i $U_{sb} = 152\ \mathrm{V}$ — naši koraci 11 i 12), a na dijagramu je vodoravna osa brzina $n$ u $\mathrm{min^{-1}}$ (0–1500), uspravna moment $M$ u $\mathrm{Nm}$ (0–80). **Crvena kriva** ($f_s = 50\ \mathrm{Hz}$) ista je kao ranije: polazni moment $\approx 54\ \mathrm{Nm}$ pri $n = 0$, vrh $\approx 78\ \mathrm{Nm}$ na $900\ \mathrm{min^{-1}}$ (kroz vrh je spuštena isprekidana crvena vertikala sa strelicom), nula na $1500\ \mathrm{min^{-1}}$. **Ljubičasta kriva** ($f_{sb} = 20\ \mathrm{Hz}$) nacrtana je tako da joj **vrh stoji tačno iznad $n = 0$**: motor koji još miruje razvija pun prevalni moment $\approx 78\ \mathrm{Nm}$; njena nula (sinhrona brzina) je na $n_{sb} = 600\ \mathrm{min^{-1}}$. Dve dugačke crvene strelice sa oznakom $\Delta n_{pr}$ mere rastojanje od vrha do sinhrone brzine za obe krive: od $0$ do $600\ \mathrm{min^{-1}}$ kod ljubičaste i od $900$ do $1500\ \mathrm{min^{-1}}$ kod crvene — obe tačno $\Delta n_{pr} = 600\ \mathrm{min^{-1}}$, jer to rastojanje ne zavisi od učestanosti (teorija, pa Korak 10). Šta treba da zaključiš: pošto je $\Delta n_{pr}$ konstanta mašine, dovoljno je sinhronu brzinu na polasku postaviti baš na $\Delta n_{pr}$ (tj. izabrati $f_{sb} = 20\ \mathrm{Hz}$) i vrh momentne krive "sleti" u polaznu tačku $n = 0$ — motor kreće najjačim mogućim momentom od $\approx 78\ \mathrm{Nm}$, umesto $\approx 54\ \mathrm{Nm}$ koje bi dao direktan start na 50 Hz (očitaj crvenu krivu pri $n = 0$).
 
 ## Česte greške i zamke
 

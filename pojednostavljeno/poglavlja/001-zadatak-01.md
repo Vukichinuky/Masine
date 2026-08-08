@@ -150,11 +150,37 @@ $$\mathbf{E}_{0f} = \mathbf{U}_f + R_s\mathbf{I}_f + jX_s\mathbf{I}_f$$
 
 Simboli: $\mathbf{E}_{0f}$ — fazor indukovane EMS jedne faze (tražena veličina), $\mathbf{U}_f$ — fazor faznog napona na priključcima, $\mathbf{I}_f$ — fazor fazne struje, $R_s\mathbf{I}_f$ — pad napona na otpornosti (u fazi sa strujom), $jX_s\mathbf{I}_f$ — pad napona na sinhronoj reaktansi (prednjači struji za $90^0$).
 
-Sledeća slika prikazuje taj dijagram — Potjeov dijagram nadpobuđenog turbogeneratora. Čitajte ga ovako: iz donje tačke (koordinatni početak) polazi vertikalno fazor napona $\mathbf{U}_f$; desno od njega, zaokrenut za ugao $\varphi$ *unazad* (struja kasni), polazi fazor struje $\mathbf{I}_f$. Na vrh $\mathbf{U}_f$ nadovezan je kratak fazor $R_s\mathbf{I}_f$ (paralelan struji — zato i uz njega piše ugao $\varphi$ prema vertikali), a na njega dug fazor $jX_s\mathbf{I}_f$ (upravan na struju). Duž od početka do krajnjeg vrha je $\mathbf{E}_{0f}$. Ugao $\delta$ između $\mathbf{U}_f$ i $\mathbf{E}_{0f}$ je ugao snage (ovde ga ne računamo), a ugao $\alpha$ — obeležen kod vrha fazora $\mathbf{U}_f$ — jeste *unutrašnji ugao trougla* između fazora napona i ukupnog pada napona; njega sada računamo.
+Sledeća slika prikazuje taj dijagram — Potjeov dijagram nadpobuđenog turbogeneratora; detaljan vodič za čitanje dat je u bloku ispod slike. Ugao $\alpha$ — obeležen kod vrha fazora $\mathbf{U}_f$ — jeste *unutrašnji ugao trougla* između fazora napona i ukupnog pada napona; njega odmah zatim računamo.
 
 ![Fazorski dijagram sinhronog turbogeneratora u nadpobuđenom režimu](../slike/fig-1.1.png)
 
 **Slika 1.1 —** Fazorski dijagram (Potjeov dijagram) sinhronog turbogeneratora u nadpobuđenom režimu: struja $\mathbf{I}_f$ kasni za naponom $\mathbf{U}_f$ za ugao $\varphi$; na vrh $\mathbf{U}_f$ nadovezuju se padovi $R_s\mathbf{I}_f$ i $jX_s\mathbf{I}_f$, a zbir svega je $\mathbf{E}_{0f}$; $\alpha$ je ugao trougla između $\mathbf{U}_f$ i ukupnog pada napona, $\delta$ ugao snage.
+
+> **Kako čitati sliku 1.1:** Dijagram je crno-beo; fazore prepoznaješ po oznakama, a
+> pomoćne konstrukcije su isprekidane linije. Referentni fazor je fazni napon
+> $\mathbf{U}_f$ ($U_{\mathrm{n}f} = 1327{,}9\ \mathrm{V}$), nacrtan vertikalno nagore iz
+> donje početne tačke; fazori rotiraju suprotno kazaljci na satu, pa ono što je od
+> $\mathbf{U}_f$ zakrenuto udesno (u smeru kazaljke) za njim kasni, a ulevo — prednjači.
+> Struja $\mathbf{I}_f$ ($376{,}5\ \mathrm{A}$) polazi iz iste tačke ukoso dole-desno i
+> kasni za naponom za ugao $\varphi$ ($36{,}87^{0}$, luk uz početnu tačku). Od vrha
+> $\mathbf{U}_f$ lanac se nastavlja padovima napona: prvo kratka strelica $R_s\mathbf{I}_f$
+> ($75{,}3\ \mathrm{V}$), paralelna struji (zato nagnuta udesno od vertikale), pa duga
+> strelica $jX_s\mathbf{I}_f$ ($734{,}2\ \mathrm{V}$), upravna na struju — upravnost
+> pokazuju isprekidani produžetak pravca struje udesno i mali znak pravog ugla na njemu.
+> Duž od početne tačke do kraja lanca je tražena EMS $\mathbf{E}_{0f}$
+> ($1907{,}2\ \mathrm{V}$), koja prednjači naponu za ugao snage $\delta$ (luk uz početnu
+> tačku; iz provere smisla $\delta = 16{,}5^{0}$). Ugao $\alpha$ ($132{,}7^{0}$) obeležen
+> je kod vrha $\mathbf{U}_f$: to je unutrašnji ugao trougla sa temenima u početnoj tački,
+> vrhu $\mathbf{U}_f$ i vrhu $\mathbf{E}_{0f}$, između stranice $U_f$ (gledane unazad, ka
+> početku) i stranice ukupnog pada $Z_s I_f$ ($738{,}0\ \mathrm{V}$) — vidi se da je tup.
+> Ugao $\varphi$ je ucrtan na dva mesta: dole, između $\mathbf{U}_f$ i $\mathbf{I}_f$
+> (definicija faktora snage), i gore, uz lanac padova, između pravca pada i isprekidane
+> vertikale paralelne naponu — čime slika pokazuje da je ceo lanac padova zakrenut za
+> $\varphi$, jer prati pravac struje. Šta treba da zaključiš: fazori $\mathbf{U}_f$,
+> $Z_s\mathbf{I}_f$ i $\mathbf{E}_{0f}$ čine trougao u kome znamo dve stranice
+> ($1327{,}9$ i $738{,}0\ \mathrm{V}$) i ugao između njih ($\alpha = 132{,}7^{0}$) —
+> kosinusna teorema u Koraku 4 iz toga daje treću stranicu,
+> $E_{0f} = 1907{,}2\ \mathrm{V} > U_{\mathrm{n}f}$, tačno kako nadpobuđen režim i nalaže.
 
 Dva pada napona zajedno čine jedan fazor — pad na sinhronoj impedansi, dužine $Z_s I_f$, koji **prednjači struji** za ugao impedanse $\theta_Z = \mathrm{arctg}(X_s/R_s)$ (mini-lekcija 7). Pošto sama struja **kasni za naponom** za $\varphi$, ukupan pad napona zaklapa sa pravcem $\mathbf{U}_f$ ugao:
 

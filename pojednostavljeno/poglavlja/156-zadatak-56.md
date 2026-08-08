@@ -415,17 +415,9 @@ On formalno daje isti moment u početnoj tački kočenja, ali uz struju od $\app
 mehaničke (momentne) karakteristike mašine za razne rotorske otpore i gde se na njima nalaze
 radne tačke pre i posle prespajanja.
 
-Na slici 56.1 je na vodoravnoj osi brzina obrtanja $n$ u $\mathrm{min^{-1}}$ (od $-800$ do
-$+800$), a na uspravnoj razvijeni elektromagnetni moment $M$ u $\mathrm{Nm}$. Prikazane su tri
-karakteristike: **siva** — prirodna motorska karakteristika bez dodatog otpora ($R_{rd}=0$);
-**puna crvena** — kočiona karakteristika sa velikim (usvojenim) dodatnim otporom; **isprekidana
-ljubičasta** — kočiona karakteristika sa malim (odbačenim) dodatnim otporom ("drugo rešenje").
-Crne tačke ❶ i ❷ označavaju stacionarnu radnu tačku neposredno pre, odnosno tačku na kočionoj
-karakteristici neposredno posle prespajanja; vertikalna strelica između njih pokazuje da mašina
-pri prespajanju **skoči** sa jedne karakteristike na drugu pri nepromenjenoj brzini. (Oznake na
-slici, $R_{rd}=4{,}17\ \Omega$ i $R_{rd}=0{,}0651\ \Omega$, jesu vrednosti iz originalne zbirke —
-po napomenama u Koracima 10 i 11 ispravne vrednosti su $4{,}31\ \Omega$ odnosno
-$0{,}0245\ \Omega$; oblik krivih se time praktično ne menja.)
+Slika 56.1 prikazuje statičke mehaničke (momentne) karakteristike mašine za tri vrednosti
+dodatnog rotorskog otpora, sa označenim radnim tačkama neposredno pre i neposredno posle
+prespajanja.
 
 ![Mehaničke karakteristike asinhrone mašine u motornom i kočionom režimu, za tri vrednosti dodatnog rotorskog otpora](../slike/fig-56.1.png)
 
@@ -434,26 +426,31 @@ prirodna karakteristika ($R_{rd}=0$) sa radnom tačkom ❶ pri $n_{\mathrm{n}}=7
 puna crvena — kočenje sa velikim dodatnim otporom (tačka ❷, $M\approx-277\ \mathrm{Nm}$);
 isprekidana — kočenje sa malim dodatnim otporom (drugo, odbačeno rešenje).
 
-Šta sa slike treba pročitati:
-
-- **Pre prespajanja** mašina radi u tački ❶ na sivoj krivoj: $n = 718\ \mathrm{min^{-1}}$,
-  $M = M_{\mathrm{n}} \approx 213\ \mathrm{Nm}$ (prevojni maksimum sive krive, $\approx
-  710\ \mathrm{Nm}$ na $\approx 545\ \mathrm{min^{-1}}$, je maksimalni moment motora).
-- **U trenutku prespajanja** brzina ostaje $718\ \mathrm{min^{-1}}$ (inercija!), ali mašina
-  "preskoči" na crvenu karakteristiku — u tačku ❷ gde je moment $\approx -277\ \mathrm{Nm}$,
-  tj. kočioni, tačno $1{,}3\,M_{\mathrm{n}}$ po uslovu zadatka. Moment promeni vrednost gotovo
-  trenutno jer je dinamika električnih promena (struje) mnogo brža od dinamike mehaničkih promena
-  (brzine).
-- **Velika dodatna otpornost čini karakteristiku veoma mekom**: crvena kriva ima mali nagib i u
-  prikazanom opsegu brzina izgleda kao prava linija — karakteristični "grbavi" oblik momentne
-  karakteristike asinhrone mašine se uopšte ne vidi, jer je prevojno klizanje sa ovolikim otporom
-  ogromno. Mekana karakteristika znači i da moment kočenja opada kako brzina pada (u $n=0$ crvena
-  kriva daje $\approx -150\ \mathrm{Nm}$).
-- **Isprekidana kriva (malo $R_{rd}$)** kroz tačku pri $718\ \mathrm{min^{-1}}$ takođe prolazi na
-  $\approx -277\ \mathrm{Nm}$, ali njen oblik je sasvim drugačiji — strma je, sa izraženim
-  prevojem od čak $\approx -700\ \mathrm{Nm}$ pri $n \approx -520\ \mathrm{min^{-1}}$; da bi se
-  taj moment ostvario, struja je višestruko veća (Korak 9), a mašina bi po zaustavljanju silovito
-  ubrzala u suprotnom smeru.
+> **Kako čitati sliku 56.1:** Na vodoravnoj osi je brzina obrtanja $n$ u $\mathrm{min^{-1}}$, od
+> $-800$ do $+800$ (negativne vrednosti = obrtanje suprotno smeru novog polja); na uspravnoj je
+> razvijeni elektromagnetni moment $M$ u $\mathrm{Nm}$, od $-800$ do $+800$; naslov slike je
+> "Razvijeni moment". Tri krive: **siva** ($R_{rd} = 0$) — prirodna motorska karakteristika, sa
+> prevojnim maksimumom $\approx 710\ \mathrm{Nm}$ na $\approx 530\ \mathrm{min^{-1}}$ i nulom
+> momenta na sinhronskoj brzini $750\ \mathrm{min^{-1}}$; **puna crvena** (oznaka
+> $R_{rd} = 4{,}17\ \Omega$) — kočiona karakteristika sa velikim, usvojenim dodatnim otporom:
+> prevojno klizanje je s ovolikim otporom ogromno, pa u prikazanom opsegu brzina kriva izgleda kao
+> gotovo prava, blago nagnuta linija bez "grbe" (u $n = 0$ daje $\approx -150\ \mathrm{Nm}$ —
+> moment kočenja opada kako brzina pada); **isprekidana ljubičasta** (oznaka
+> $R_{rd} = 0{,}0651\ \Omega$, natpis "Drugo rešenje") — kočenje sa malim, odbačenim otporom:
+> strma kriva sa dubokim prevojem od $\approx -700\ \mathrm{Nm}$ na $n \approx -520\ \mathrm{min^{-1}}$.
+> (Oznake otpora na slici su vrednosti iz originalne zbirke; po napomenama u Koracima 10 i 11
+> ispravne vrednosti su $4{,}31\ \Omega$ odnosno $0{,}0245\ \Omega$ — oblik krivih se time
+> praktično ne menja.) Crne tačke: ❶ na sivoj krivoj, $(718\ \mathrm{min^{-1}};\ \approx 213\ \mathrm{Nm})$
+> — stacionarna radna tačka pre prespajanja; ❷ na crvenoj, $(718\ \mathrm{min^{-1}};\ \approx -277\ \mathrm{Nm}
+> = -1{,}3\,M_{\mathrm{n}})$ — tačka neposredno posle prespajanja; crvena vertikalna strelica
+> ❶→❷ pokazuje da mašina pri prespajanju **skače sa karakteristike na karakteristiku pri
+> nepromenjenoj brzini**: struje se promene za nekoliko desetina milisekundi, a brzina zbog
+> inercije ne stigne. Kroz istu tačku pri $718\ \mathrm{min^{-1}}$ prolazi i isprekidana kriva —
+> oba korena kvadratne jednačine daju isti početni kočioni moment, ali ljubičasto rešenje to
+> plaća strujom od $\approx 203\ \mathrm{A}$ (Korak 9), a po zaustavljanju bi mašina silovito
+> ubrzala u suprotnom smeru. **Šta treba da zaključiš:** veliki dodatni otpor daje "pitomu",
+> gotovo linearnu kočionu karakteristiku sa umerenim momentom i strujom bliskom nazivnoj
+> ($\approx 34{,}8\ \mathrm{A}$) — zato se od dva matematički ravnopravna rešenja bira upravo on.
 
 **Šta smo dobili:** vizuelnu potvrdu izbora iz Koraka 9 — kočenje velikim otporom je "pitomo"
 (prava linija, umeren moment, mala struja), dok bi kočenje malim otporom bilo naglo i strujno

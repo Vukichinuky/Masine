@@ -173,11 +173,32 @@ $$M_{\mathrm{n}} = \frac{60 \cdot 4400}{2\pi \cdot 1465} = \frac{264\,000}{9204{
 
 **Zašto ovaj korak:** Sve dalje računamo iz ekvivalentne šeme, pa je prvo crtamo i iz nje ispisujemo izraz za moment.
 
-Sledeća slika prikazuje ekvivalentnu šemu po jednoj fazi. Čitaj je sleva nadesno: iz izvora faznog napona $U_{sf}$ struja prolazi kroz otpornost statora $R_s$ i rasipnu reaktansu statora $X_{\gamma s}$, pa (pošto smo granu magnećenja izbacili — mini-lekcija 2) ista ta struja nastavlja kroz svedenu rasipnu reaktansu rotora $X'_{\gamma r}$ i ekvivalentnu rotorsku otpornost $R'_r/s$. Zato na šemi piše $\bar{I}_{sf} = \bar{I}'_{rf}$ — statorska i svedena rotorska struja su ista struja.
+Sledeća slika prikazuje ekvivalentnu šemu po jednoj fazi; detaljno čitanje šeme je u bloku ispod slike.
 
 ![Ekvivalentna šema asinhronog motora po fazi, bez grane magnećenja: redna veza R_s, X_gamma_s, X'_gamma_r i R'_r/s na faznom naponu U_sf](../slike/fig-39.1.png)
 
 **Slika 39.1 —** Ekvivalentna šema asinhronog motora (uz zanemarenje grane magnećenja, u nedostatku podataka).
+
+> **Kako čitati sliku 39.1:** Ovo je električna šema jedne faze, pa se čita kao kolo —
+> sleva nadesno, prateći struju. Na levoj ivici **crvena** dvosmerna strelica sa oznakom
+> $\overline{U}_{sf}$ i znakom $+$ na vrhu predstavlja izvor faznog napona
+> ($U_f = 220\ \mathrm{V}$; cela šema je po fazi, otud indeks f). Odatle struja teče kroz
+> cik-cak simbol $R_s$ — otpornost statorskog namotaja ($1\ \Omega$) — pa kroz zavojnicu
+> $X_{\gamma s}$ — rasipnu reaktansu statora ($3\ \Omega$). **Crvena** strelica na sredini
+> gornje grane, sa natpisom $\overline{I}_{sf} = \overline{I}'_{rf}$, iskazuje ključnu
+> posledicu zanemarene grane magnećenja: baš na tom mestu, između statorskog i rotorskog
+> dela, u punoj šemi visila bi paralelna grana magnećenja — ovde je nema, pa nigde nema
+> grananja i statorska struja je identična svedenoj rotorskoj. Struja zatim prolazi kroz
+> drugu zavojnicu — svedenu rasipnu reaktansu rotora ($3\ \Omega$; na slici je označena
+> $X'_{rf}$, u našem tekstu $X'_{\gamma r}$ — ista veličina) — i na kraju kroz otpornik sa
+> kosom strelicom (simbol promenljivog otpornika) vrednosti $R'_r/s$: promenljiv je zato
+> što mu vrednost zavisi od klizanja — pri polasku ($s = 1$) iznosi samo
+> $R'_r = 0{,}6745\ \Omega$, a u nazivnoj tački ($s_{\mathrm{n}} = 0{,}0233$) čak
+> $R'_r/s_{\mathrm{n}} = 28{,}95\ \Omega$. Donji provodnik zatvara kolo nazad ka izvoru.
+> Šta treba da zaključiš: motor je u ovoj aproksimaciji prosto redno R-X kolo, pa struju
+> daje Omov zakon — u nazivnoj tački $I = 220/\sqrt{(1+28{,}95)^2 + 6^2} = 7{,}2\ \mathrm{A}$,
+> a pri polasku $35{,}3\ \mathrm{A}$ — i upravo iz snage na otporniku $R'_r/s$ slede svi
+> momenti u ovom zadatku.
 
 Prema mini-lekcijama 3 i 4, moment pri proizvoljnom klizanju $s$ je:
 
@@ -294,11 +315,32 @@ $$M_p = 11{,}61\ \mathrm{Nm} \;<\; M_{p\mathrm{n}} = 16{,}07\ \mathrm{Nm} \;<\; 
 
 **Motor NE MOŽE da startuje pri sniženom naponu — ali, što je još upečatljivije, on nominalni teret od $28{,}68\ \mathrm{Nm}$ ne može da pokrene čak ni pri punom, nominalnom naponu**, jer mu je i tada polazni moment ($16{,}07\ \mathrm{Nm}$) manji od momenta tereta.
 
-Ceo zaključak se najlepše vidi na momentnoj karakteristici. Sledeća slika prikazuje moment motora $M$ (vertikalna osa, u $\mathrm{Nm}$) u funkciji brzine rotora $n_2$ (horizontalna osa, od 0 do $1500\ \mathrm{min^{-1}}$). Debela crvena kriva je karakteristika pri punom naponu $U_{s\mathrm{n}}$, tanka crvena pri sniženom naponu $U_s = 0{,}85\,U_{s\mathrm{n}}$, a horizontalna siva linija je konstantan moment tereta $M_{\mathrm{n}} = 28{,}68\ \mathrm{Nm}$. Čitaj je ovako: polazak je krajnja **leva** tačka krivih ($n_2 = 0$); motor može da ubrzava samo tamo gde je njegova kriva **iznad** sive linije tereta. Vidi se da na $n_2 = 0$ obe crvene krive (oko 16 odnosno oko 11,6 Nm) leže **ispod** linije tereta — motor ni u jednom slučaju ne kreće s mesta, iako bi u okolini prevojne tačke (oko $1330\ \mathrm{min^{-1}}$, gde puna kriva dostiže oko $65\ \mathrm{Nm}$) momenta imao i napretek, samo kad bi nekako do te brzine stigao.
+Ceo zaključak se najlepše vidi na momentnoj karakteristici, koju prikazuje sledeća slika; detaljno čitanje je u bloku ispod nje.
 
 ![Momentna karakteristika motora: debela crvena kriva za pun napon, tanka crvena za 85% napona, horizontalna linija konstantnog momenta tereta 28,68 Nm; obe krive na n=0 leže ispod linije tereta](../slike/fig-39.2.png)
 
 **Slika 39.2 —** Momentna karakteristika motora za pun (puna crvena linija) i sniženi napon napajanja (tanka crvena linija), i momentna karakteristika konstantnog opterećenja — uz rešenje zadatka.
+
+> **Kako čitati sliku 39.2:** Dijagram je na žutoj podlozi sa plavom tačkastom mrežom.
+> Horizontalna osa je brzina rotora $n_2$ u $\mathrm{min^{-1}}$, od $0$ do $1500$
+> (sinhrona brzina); vertikalna osa je moment $M$ u $\mathrm{Nm}$, od $0$ do $70$ (oznake
+> osa su crvene, uz crvene strelice smera porasta). Na slici su tri linije. **Debela
+> crvena kriva**, označena $U_{sn}$, je momentna karakteristika $M(n_2)$ pri punom naponu:
+> počinje na $n_2 = 0$ polaznim momentom $M_{p\mathrm{n}} = 16{,}07\ \mathrm{Nm}$, raste
+> do prevalnog (maksimalnog) momenta od oko $65\ \mathrm{Nm}$ na oko
+> $1330\ \mathrm{min^{-1}}$ (prevalno klizanje $s_m = 0{,}111$), pa strmo pada ka nuli u
+> sinhronizmu, prolazeći na silaznoj grani kroz nazivnu tačku
+> ($1465\ \mathrm{min^{-1}}$, $28{,}68\ \mathrm{Nm}$). **Tanka crvena kriva**, označena
+> $U_s$, je ista karakteristika pri naponu sniženom za 15%: svaka njena tačka je
+> $0{,}85^2 = 0{,}7225$ puta niža od debele (polazni moment $11{,}61\ \mathrm{Nm}$, vrh
+> oko $47\ \mathrm{Nm}$). **Horizontalna siva linija**, označena $M_n$, je konstantan
+> moment tereta $28{,}68\ \mathrm{Nm}$. Motor može da ubrzava samo tamo gde je njegova
+> crvena kriva iznad sive linije: debela kriva preseca liniju tereta tek oko
+> $700\ \mathrm{min^{-1}}$, a tanka tek oko $1000\ \mathrm{min^{-1}}$. Šta treba da
+> zaključiš: na polasku ($n_2 = 0$, krajnja leva tačka) obe crvene krive leže **ispod**
+> sive linije ($16{,}07$ i $11{,}61 < 28{,}68\ \mathrm{Nm}$), pa motor sa ovim teretom ne
+> kreće s mesta ni pri punom ni pri sniženom naponu — iako bi mu, kad bi se nekako zaleteo
+> iznad oko $700\ \mathrm{min^{-1}}$, momenta bilo i napretek.
 
 **Šta smo dobili:** Konačan odgovor: ne, motor ne može startovati — ni pri sniženom, ni čak pri punom naponu, dokle god teret na polasku traži pun nominalni moment. U praksi bi se ovakav motor puštao u rad neopterećen (pa bi se teret pridodavao tek kad se zaleti), ili bi se birao motor sa većim polaznim momentom.
 

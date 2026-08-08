@@ -140,11 +140,13 @@ $$P_{\mathrm{ob}} = q_s I'^2_{rf}\,\frac{R'_r}{s},\qquad P_{\mathrm{Cur}} = q_s 
 
 Odnos $P_{\mathrm{Cur}} = s\,P_{\mathrm{ob}}$ zapamti: "klizanje = deo snage zazora koji izgori u rotoru".
 
-Sledeća slika prikazuje kompletnu ekvivalentnu šemu po fazi. Čitaj je sleva nadesno: izvor faznog napona $\overline{U}_{sf}$, pa redna statorska grana ($R_s$ — otpor statorskog namotaja, $X_{\gamma s}$ — rasipna reaktansa statora), zatim poprečna grana ($R_{\mathrm{Fe}}$ — otpor koji predstavlja gubitke u gvožđu, paralelno sa $X_\mu$ — reaktansom magnećenja kroz koju teče struja magnećenja $\overline{I}_\mu$), i na kraju, desno od isprekidane crvene linije koja simbolično razdvaja stator od rotora, svedena rotorska grana ($X'_{\gamma r}$, $R'_r$ i promenljivi otpornik $\frac{1-s}{s}R'_r$ koji predstavlja mehaničko opterećenje).
+Sledeća slika prikazuje kompletnu ekvivalentnu šemu po fazi.
 
 ![Ekvivalentna šema asinhronog motora](../slike/fig-35.1.png)
 
 **Slika 35.1 —** Ekvivalentna šema asinhronog motora (po jednoj fazi). Isprekidana linija deli statorski i rotorski deo; promenljivi otpornik $\frac{1-s}{s}\cdot R'_r$ predstavlja mehaničku snagu koju motor predaje teretu.
+
+> **Kako čitati sliku 35.1:** Ovo je šema električnog kola (po jednoj fazi), pa je čitamo prateći struju od ulaza do izlaza; otpornosti i reaktanse su u $\mathrm{\Omega}$, naponi u $\mathrm{V}$, struje u $\mathrm{A}$. Elementi kola nacrtani su crnom bojom, a crvenom su pomoćne oznake: strelice referentnih smerova napona i struja i vertikalna isprekidana crvena linija sa natpisima STATOR/ROTOR, koja simbolično predstavlja vazdušni zazor. Sleva nadesno: izvor faznog napona $\overline{U}_{sf}$ (crvena dvosmerna strelica, sa $+$ gore); struja statora $\overline{I}_{sf}$ (crvena strelica udesno) ulazi u redni otpor $R_s$ (bakar statora) i rasipnu reaktansu $X_{\gamma s}$ (deo fluksa koji ne obuhvati rotor). U srednjem čvoru deo struje skreće u poprečnu granu — paralelnu vezu $R_{\mathrm{Fe}}$ (gubici u gvožđu; kroz njega aktivna komponenta $\overline{I}_{Fe}$) i $X_\mu$ (magnećenje; kroz njega reaktivna komponenta $\overline{I}_\mu$); njihov zbir je $\overline{I}_{0f}$, a napon na toj grani je indukovana EMS $\overline{E}_{sf}$ (crvena lučna strelica sa $+$). Ostatak struje, svedena rotorska struja $\overline{I}'_{rf}$, prelazi „preko zazora" u rotorsku granu: rasipna reaktansa $X'_{\gamma r}$, stvarni otpor rotora $R'_r$ i na kraju promenljivi otpornik $\frac{1-s}{s}\cdot R'_r$ (simbol otpornika sa kosom strelicom) — fiktivni element koji glumi mehanički teret: u praznom hodu ($s\to 0$) postaje beskonačan (grana prekinuta), a pri ukočenom rotoru ($s=1$) jednak je nuli. Šta treba da zaključiš: ceo motor se prema mreži ponaša kao ovo kolo od šest elemenata ($R_s$, $X_{\gamma s}$, $R_{\mathrm{Fe}}$, $X_\mu$, $X'_{\gamma r}$, $R'_r$) — zadatak dela a) je da im iz ogleda odredimo brojčane vrednosti (rezultat vidiš na slici 35.4).
 
 ### Mini-lekcija 5: Ogled praznog hoda — otkuda $R_{\mathrm{Fe}}$ i $X_\mu$
 
@@ -205,11 +207,13 @@ $$M_p = \left(\frac{U_{\mathrm{n}}}{U_k}\right)^2 M_k.$$
 
 ### Deo a) Parametri ekvivalentne šeme
 
-Počinjemo od ogleda praznog hoda. Sledeća slika pokazuje kako ekvivalentna šema izgleda baš u tom ogledu — čitaj je sleva nadesno kao postupno uprošćavanje: levo je puna šema u kojoj je rotorska grana isprekidana jer kroz nju ne teče struja ($\overline{I}'_{rf}\approx 0$), a sa priključaka se ceo motor vidi kao jedna impedansa $Z_0$ (vertikalna grana $R_0$, $X_0$ uz izvor); desno je konačno uprošćenje — kad zanemarimo pad napona na $R_s$ i $X_{\gamma s}$, ostaje samo paralelna veza $R_{\mathrm{Fe}}$ i $X_\mu$ direktno na faznom naponu, sa strujom $\overline{I}_{0f}$ podeljenom na $\overline{I}_{\mathrm{Fe}}$ i $\overline{I}_\mu$.
+Počinjemo od ogleda praznog hoda. Sledeća slika pokazuje kako ekvivalentna šema izgleda baš u tom ogledu.
 
 ![Naponi, struje i ekvivalentna šema asinhronog motora za ogled praznog hoda](../slike/fig-35.2.png)
 
 **Slika 35.2 —** Naponi, struje i ekvivalentna šema asinhronog motora za ogled praznog hoda: rotorska grana je otvorena ($s\approx 0$), pa merenja "vide" samo poprečnu granu.
+
+> **Kako čitati sliku 35.2:** Slika ima dva dela i čita se sleva nadesno, kao postupno uprošćavanje šeme sa slike 35.1 za ogled praznog hoda (sve po jednoj fazi; elementi crni, referentni smerovi crveni). **Levi deo:** na priključcima su fazni napon praznog hoda $\overline{U}_{0sf}$ (kod nas $219/\sqrt{3}\approx 126{,}4\ \mathrm{V}$) i ulazna struja $\overline{I}_{0sf}$ ($5{,}7\ \mathrm{A}$); rotorska grana je nacrtana isprekidano i obeležena sa $\overline{I}'_{rf}\approx 0$, jer je pri $s\approx 0$ fiktivni otpornik $\frac{1-s}{s}R'_r$ praktično beskonačan — kroz nju struje nema, pa sva struja prolazi kroz $R_s$, $X_{\gamma s}$ i poprečnu granu $R_{Fe}\parallel X_\mu$ (komponente $\overline{I}_{Fe}$ i $\overline{I}_\mu$, zbir $\overline{I}_{0f}$). Vertikalna grana $R_0$–$X_0$ nacrtana odmah uz izvor nije novi deo mašine, nego „ono što mreža vidi": ceo motor se u praznom hodu prema priključcima ponaša kao jedna redna impedansa $Z_0 = U_{0f}/I_0 = 22{,}18\ \mathrm{\Omega}$ (njeni delovi bi bili $R_0 = Z_0\cos\varphi_0 \approx 3{,}9\ \mathrm{\Omega}$ i $X_0 = Z_0\sin\varphi_0 \approx 21{,}8\ \mathrm{\Omega}$). **Desni deo:** konačno uprošćenje — kad se zanemari mali pad napona na $R_s$ i $X_{\gamma s}$, pun fazni napon stoji direktno na paralelnoj vezi $R_{\mathrm{Fe}} = 223{,}6\ \mathrm{\Omega}$ (kroz njega teče $I_{Fe} \approx 0{,}57\ \mathrm{A}$, korak 3) i $X_\mu = 22{,}54\ \mathrm{\Omega}$ (kroz njega $I_\mu = I_0\sin\varphi_0 \approx 5{,}6\ \mathrm{A}$ — praktično cela struja praznog hoda). Šta treba da zaključiš: u praznom hodu merenja „vide" samo poprečnu granu, pa se iz $P_0$, $U_0$ i $I_0$ direktno računaju $R_{\mathrm{Fe}}$ i $X_\mu$ (koraci 1–6).
 
 ### Korak 1: Uži gubici praznog hoda $P'_0$
 
@@ -277,11 +281,13 @@ Time je poprečna grana gotova. Prelazimo na ogled kratkog spoja. Pri kratkom sp
 
 $$R'_r\,\frac{1-s}{s} = 0.$$
 
-Sledeća slika prikazuje šemu za ovaj ogled: poprečna grana je precrtana (kroz nju teče zanemarljiva struja $\overline{I}_0 \approx 0$ u poređenju sa velikom strujom kratkog spoja), pa je struja statora jednaka svedenoj struji rotora ($\overline{I}_{ksf} = \overline{I}'_{krf}$) i sve se svodi na prostu rednu vezu — gore desno na slici sažetu u $R_k$ i $X_k$.
+Sledeća slika prikazuje šemu za ovaj ogled.
 
 ![Naponi, struje i ekvivalentna šema asinhronog motora za ogled kratkog spoja](../slike/fig-35.3.png)
 
 **Slika 35.3 —** Naponi, struje i ekvivalentna šema asinhronog motora za ogled kratkog spoja: grana magnećenja se zanemaruje, ostaje redna veza $R_k = R_s + R'_r$ i $X_k = X_{\gamma s} + X'_{\gamma r}$.
+
+> **Kako čitati sliku 35.3:** Šema kola za ogled kratkog spoja ($s = 1$), po jednoj fazi. Iznad glavne šeme ispisana je jednačina $Z_k = \sqrt{(R_s+R'_r)^2+(X_{\gamma s}+X'_{\gamma r})^2} = \sqrt{R_k^2+X_k^2}$ i nacrtana mala redna veza $R_k$–$X_k$ — to je „sažetak" cele šeme u samo dva elementa. U glavnoj šemi: levo je izvor sniženog faznog napona $\overline{U}_{ksf}$ (crvena dvosmerna strelica; u ogledu na 15 Hz to je $26{,}5/\sqrt{3}\approx 15{,}3\ \mathrm{V}$), pa redno $R_s$ i $X_{\gamma s}$; poprečna grana $R_{Fe}\parallel X_\mu$ nacrtana je isprekidano i **precrtana velikim crvenim znakom X**, uz oznaku $\overline{I}_0 \approx 0$ — njena struja je zanemarljiva prema struji kratkog spoja ($18{,}6\ \mathrm{A}$ na 15 Hz, odnosno $83{,}3\ \mathrm{A}$ na 60 Hz). Zato je struja statora jednaka svedenoj struji rotora, što na slici piše iznad grane: $\overline{I}_{ksf} = \overline{I}'_{krf}$ (crvena strelica udesno). Dalje redno slede $X'_{\gamma r}$ i $R'_r$; fiktivnog otpornika $\frac{1-s}{s}R'_r$ nema, jer je pri $s = 1$ jednak nuli, pa se kolo zatvara direktno. Šta treba da zaključiš: u kratkom spoju ostaje čista redna veza, pa iz merenja direktno slede $R_k = R_s + R'_r = 0{,}650\ \mathrm{\Omega}$ i $X_{k,15} = 0{,}504\ \mathrm{\Omega}$ (koraci 7–9).
 
 Podsetnik iz mini-lekcije 6: parametre šeme vadimo iz ogleda na **15 Hz**, jer je u njemu potiskivanje struje u rotorskom kavezu slabo izraženo, a struja ($18{,}6\ \mathrm{A}$) bliska nazivnoj — radni uslovi su najbliži normalnim.
 
@@ -331,11 +337,13 @@ $$X_{\gamma s} = X'_{\gamma r} = \frac{X_k}{2} = \frac{2{,}016}{2} = 1{,}008\ \m
 
 **Šta smo dobili:** Kompletnu rednu granu. Uoči hijerarhiju: $X_\mu = 22{,}54\ \mathrm{\Omega}$ je oko 22 puta veća od $X_{\gamma s} = 1{,}008\ \mathrm{\Omega}$ — glavni fluks je "jak", rasipanje "slabo", što je odlika svake zdrave mašine.
 
-Time je deo a) završen. Sledeća slika prikazuje ekvivalentnu šemu sa svim upisanim izračunatim vrednostima — istu šemu kao na slici 35.1, samo što su umesto simbola upisani brojevi (redom sleva: $R_s = 0{,}262\ \mathrm{\Omega}$, $X_{\gamma s} = 1{,}008\ \mathrm{\Omega}$, u poprečnoj grani $R_{\mathrm{Fe}} = 223{,}6\ \mathrm{\Omega}$ i $X_\mu = 22{,}54\ \mathrm{\Omega}$, pa $X'_{\gamma r} = 1{,}008\ \mathrm{\Omega}$, $R'_r = 0{,}39\ \mathrm{\Omega}$ i promenljivi otpornik $\frac{1-s}{s}\cdot 0{,}39\ \mathrm{\Omega}$).
+Time je deo a) završen. Sledeća slika prikazuje ekvivalentnu šemu sa svim upisanim izračunatim vrednostima.
 
 ![Parametri ekvivalentne šeme sa izračunatim vrednostima](../slike/fig-35.4.png)
 
 **Slika 35.4 —** Parametri ekvivalentne šeme (za nazivnu frekvenciju 60 Hz), sa svim izračunatim vrednostima.
+
+> **Kako čitati sliku 35.4:** Ista šema kao na slici 35.1, samo su umesto simbola upisane izračunate vrednosti (sve u $[\mathrm{\Omega}]$, za nazivnu frekvenciju 60 Hz). Sleva nadesno: $R_s = 0{,}262\ \mathrm{\Omega}$ (jednosmerno merenje) i $X_{\gamma s} = 1{,}008\ \mathrm{\Omega}$ (polovina od $X_k = 2{,}016\ \mathrm{\Omega}$, korak 10); u poprečnoj grani $R_{\mathrm{Fe}} = 223{,}6\ \mathrm{\Omega}$ (korak 3) paralelno sa $X_\mu = 22{,}54\ \mathrm{\Omega}$ (korak 6), sa strujama $\overline{I}_{Fe}$, $\overline{I}_\mu$ i $\overline{I}_{0f}$; u rotorskoj grani $X'_{\gamma r} = 1{,}008\ \mathrm{\Omega}$, $R'_r = 0{,}39\ \mathrm{\Omega}$ (korak 8) i promenljivi otpornik $\frac{1-s}{s}\cdot 0{,}39\ \mathrm{\Omega}$ koji predstavlja mehanički teret. Crvene strelice su referentni smerovi $\overline{U}_{sf}$, $\overline{E}_{sf}$ i struja, isti kao na slici 35.1. Uoči odnose brojeva: poprečna grana ($223{,}6$ i $22{,}54\ \mathrm{\Omega}$) je za red do dva reda veličine „teža" od redne grane ($0{,}26$–$1{,}01\ \mathrm{\Omega}$) — glavni fluks dominira, a rasipanje i gubici u gvožđu su sporedne pojave. Šta treba da zaključiš: ovo je gotov „električni model" motora — kompletan odgovor na deo a), iz koga se bilo koja radna tačka dalje računa bez ijednog novog merenja.
 
 ### Deo b) Polazni moment
 

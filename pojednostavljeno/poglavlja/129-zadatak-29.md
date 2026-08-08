@@ -192,15 +192,29 @@ potiskivanje struje) — i ta asimetrija između $R_r$ i $X_{\gamma rs}$ je srž
 
 Jedna faza rotorskog namotaja je zatvoreno kolo: indukovana EMS $E_{rf}$ tera struju kroz sopstveni
 otpor $R_r$ i sopstvenu rasipnu reaktansu $X_{\gamma rs}$, vezane na red. Sledeća slika prikazuje
-upravo to kolo — čitaj je ovako: levo je izvor (indukovana EMS $\overline{E}_{rf}$), desno su redno
-vezani rasipna induktivnost $L_{\gamma rs}$ i otpor $R_r$, a strelica gore označava struju
-$\overline{I}_{rf}$; uz izvor i struju je naglašeno da im je učestanost $f_r$ — sve u ovom kolu
-treperi rotorskom, a ne mrežnom učestanošću.
+upravo to kolo.
 
 ![Ekvivalentno kolo obrtnog rotora na rotorskoj učestanosti](../slike/fig-29.1.png)
 
 **Slika 29.1 —** Ekvivalentno kolo obrtnog rotora kod kojeg je učestanost indukovane elektromotorne
 sile i struje jednaka stvarnoj vrednosti $f_r$.
+
+> **Kako čitati sliku 29.1:** Šema kola jedne faze obrtnog rotora — prati struju po konturi. Na
+> levoj strani je crvena dvostrana strelica sa znakom „+" na gornjem kraju: ona označava
+> indukovanu elektromotornu silu $\overline{E}_{rf}$, koja je izvor ovog kola (simbol izvora nije
+> nacrtan — izvor je predstavljen samo naponskom strelicom). Uz nju stoji i oznaka $f_r$ —
+> podsetnik da sve u ovom kolu treperi **rotorskom** učestanošću
+> $f_r = s\,f_s = 0{,}9\ \mathrm{Hz}$, a ne mrežnom. Gornjim provodnikom teče struja
+> $\overline{I}_{rf}$ (crvena strelica udesno, takođe sa oznakom $f_r$). U desnoj, silaznoj grani
+> redno su vezani: rasipna induktivnost rotora $L_{\gamma rs}$ ($0{,}22\ \mathrm{mH}$; njena
+> reaktansa na ovoj učestanosti je $X_{\gamma rs} = 2\pi f_r L_{\gamma rs} = 0{,}00124\ \Omega$ —
+> upravo tu formulu ispisuje i deo teksta zbirke vidljiv iznad šeme) i otpor namotaja $R_r$
+> ($0{,}0233\ \Omega$). Donji provodnik zatvara konturu nazad na izvor. Struja je po Omovom
+> zakonu $I_{rf} = E_{rf}\big/\sqrt{R_r^2 + X_{\gamma rs}^2}$, sa
+> $E_{rf} = s\,E_{rfk} = 4{,}83\ \mathrm{V}$ — što zaista daje $206{,}9\ \mathrm{A}$ (vidi
+> „Proveru smisla"). Šta treba da zaključiš: ovo je fizički „istinito" kolo rotora — mali napon,
+> majušna reaktansa, niska učestanost — ali je nezgodno za račun jer mu i izvor i reaktansa i
+> učestanost zavise od klizanja; zato ga u nastavku svodimo na kolo ukočenog rotora (slika 29.2).
 
 Po Omovom zakonu za naizmenično kolo (efektivne vrednosti; moduo redne impedanse je
 $\sqrt{R^2 + X^2}$), struja u faznom namotaju rotora iznosi:
@@ -230,16 +244,35 @@ otpor **fiktivna, od klizanja zavisna vrednost** $R_r/s$. Drugim rečima: stvarn
 oba kola daju istu $I_{rf}$ — ali ne zaboravi da je stvarna učestanost rotorskih napona i struja i
 dalje $f_r$, a ne $f_s$; $f_s$ u svedenom kolu je samo računska pogodnost.
 
-Sledeća slika prikazuje to svedeno kolo — čitaj je ovako: izvor je sada $\overline{E}_{rfk}$, na red
-su vezani reaktansa $X_{\gamma r}$ i stvarni otpor $R_r$, a zatim još jedan, promenljivi otpornik
-(nacrtan sa kosom strelicom) vrednosti $\dfrac{1-s}{s}\cdot R_r$; struja je ista $\overline{I}_{rf}$.
-Zbir dva otpora je upravo fiktivnih $R_r/s$:
+Sledeća slika prikazuje to svedeno kolo, u kome je fiktivni otpor $R_r/s$ razdvojen na stvarni
+otpor $R_r$ i dodatni promenljivi otpornik $\dfrac{1-s}{s}\cdot R_r$ — zbir ta dva otpora je
+upravo fiktivnih $R_r/s$:
 
 $$R_r + \frac{1-s}{s}\,R_r = R_r\left(1 + \frac{1-s}{s}\right) = R_r \cdot \frac{s + 1 - s}{s} = \frac{R_r}{s}. \checkmark$$
 
 ![Svedeno ekvivalentno kolo rotora — ukočeni rotor sa fiktivnim otporom](../slike/fig-29.2.png)
 
 **Slika 29.2 —** Predstavljanje obrtnog rotora ekvivalentnim ukočenim rotorom.
+
+> **Kako čitati sliku 29.2:** Šema svedenog (ekvivalentnog) kola rotora — najbolje je čitati je
+> uporedo sa slikom 29.1, element po element. Na levoj strani je opet crvena naponska strelica sa
+> „+", ali sada označava EMS **ukočenog** rotora $\overline{E}_{rfk} = 268{,}19\ \mathrm{V}$
+> (konstantu mašine), bez oznake učestanosti — celo kolo je računski „preseljeno" na statorsku
+> učestanost $f_s = 50\ \mathrm{Hz}$. Gornjim provodnikom teče ista struja $\overline{I}_{rf}$
+> (crvena strelica udesno) — ekvivalencija je i napravljena tako da struja ostane nepromenjena,
+> $206{,}9\ \mathrm{A}$. Na gornjoj grani su redno vezani: rasipna reaktansa
+> $X_{\gamma r} = 2\pi f_s L_{\gamma rs} = 0{,}0691\ \Omega$ (uoči razliku u oznakama: na slici
+> 29.1 pisala je induktivnost $L_{\gamma rs}$, ovde reaktansa $X_{\gamma r}$, jer je učestanost
+> sada fiksirana) i stvarni otpor namotaja $R_r = 0{,}0233\ \Omega$, koji modeluje Džulove
+> gubitke u bakru rotora. U desnoj, silaznoj grani je otpornik nacrtan sa kosom strelicom —
+> promenljivi (od klizanja zavisni) fiktivni otpor $\dfrac{1-s}{s}\cdot R_r$, koji modeluje
+> mehaničku snagu na vratilu; pri $s = 0{,}018$ iznosi $\approx 55\,R_r = 1{,}27\ \Omega$, pa se
+> u njemu „troši" ogromna većina snage — slika efikasne mašine pri malom klizanju. Zbir dva
+> otpora daje fiktivnih $R_r/s = 1{,}2944\ \Omega$, prema kome je reaktansa $X_{\gamma r}$
+> praktično zanemarljiva (kolo je skoro čisto otporno, struja skoro u fazi sa EMS). Šta treba da
+> zaključiš: svedeno kolo daje istu struju kao stvarno, ali sa konstantnim izvorom i konstantnom
+> reaktansom — sva zavisnost od radne tačke sabijena je u jedan promenljivi otpornik, i baš zato
+> je ovo kolo standardni alat za proračun asinhrone mašine.
 
 Zašto se $R_r/s$ deli na dva dela? Fiktivna otpornost $R_r/s$ modeluje **celokupnu aktivnu snagu**
 koja sa statora, kroz vazdušni zazor, elektromagnetnom interakcijom prelazi na rotor — tzv. **snagu

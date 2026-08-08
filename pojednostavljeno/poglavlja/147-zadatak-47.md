@@ -184,18 +184,14 @@ $$s_{\mathrm{pr}} = \pm \frac{R'_r}{\sqrt{R_s^2 + \left(X_{\gamma s} + X'_{\gamm
 Dva znaka nisu greška: znak $+$ daje prevalno klizanje u **motorskom** režimu, a znak $-$ u
 **generatorskom** režimu (karakteristika ima maksimum i za pozitivna i za negativna klizanja).
 
-Sledeća slika prikazuje celu momentnu karakteristiku $M(s)$, sa oba prevala. Čitaj je ovako: na
-horizontalnoj osi je klizanje $s$ (raste udesno; obrati pažnju da tu brzina *opada* udesno, jer
-veće klizanje znači sporiji rotor), na vertikalnoj je moment $M$. Za $0 < s < 1$ mašina je
-**motor**: moment raste od polazne vrednosti $M_p$ (pri $s = 1$) do prevalnog momenta
-$M_{\mathrm{pr}}$ (pri $s = s_{\mathrm{pr}}$), pa naglo pada ka nuli u $s = 0$. Za $s < 0$ mašina
-je **generator** (moment negativan, sa simetričnim prevalom pri $-s_{\mathrm{pr}}$), a za $s > 1$
-**kočnica**.
+Sledeća slika prikazuje celu momentnu karakteristiku $M(s)$, sa oba prevala.
 
 ![Momentna karakteristika asinhrone mašine u funkciji klizanja, sa naznačenim prevalnim momentom i prevalnim klizanjem u motorskom i generatorskom režimu](../slike/fig-47.1.png)
 
 **Slika 47.1 —** Moment asinhrone mašine u funkciji klizanja (momentna karakteristika) sa
 naznačenim prevalnim momentom i prevalnim klizanjem.
+
+> **Kako čitati sliku 47.1:** Grafik je principski (na osama nema brojčane razmere, samo karakteristične vrednosti). Horizontalna plava osa je klizanje $s$ (bezdimenziono), raste udesno: obeležene su vrednosti $-1$, $-s_{\mathrm{pr}}$, $0$, $+s_{\mathrm{pr}}$ i $1$; zapamti da brzina rotora duž ove ose *opada* udesno, jer je $n = (1-s)\,n_{\mathrm{s}}$. Vertikalna osa je moment $M$ ($+M$ gore, $-M$ dole). Debela **crvena kriva** je momentna karakteristika $M(s)$. Zelene tačkaste linije obeležavaju karakteristične tačke: pri $s = +s_{\mathrm{pr}}$ (za naš motor $0{,}268$) kriva ima maksimum, a crvena dvosmerna strelica do njega označava prevalni moment $M_{\mathrm{pr}}$ (kod nas $75\ \mathrm{Nm}$); pri $s = 1$ (polazak) manja dvosmerna strelica označava polazni moment $M_p$ (kod nas $37{,}5\ \mathrm{Nm}$); pri $s = -s_{\mathrm{pr}}$ je simetrični negativni preval. Crvene horizontalne strelice ispod ose dele područja rada, ispisana kurzivom: **generator** ($s < 0$, moment negativan — na to pokazuje i plavi natpis „− generatorski režim"), **motor** ($0 < s < 1$, moment pozitivan — plavi natpis „+ motorni režim") i **kočnica** ($s > 1$). Plavi natpis „Kritično (prevalno) klizanje" pokazuje strelicom upravo na vrh krive. Karakteristične nule: $M = 0$ u $s = 0$ (sinhronizam — nema relativnog kretanja polja i rotora), a za velika $|s|$ kriva opada ka nuli kao hiperbola. Šta treba da zaključiš: maksimum momenta nije ni na polasku ni na sinhronizmu, nego između njih, pri $s_{\mathrm{pr}}$ — upravo tu činjenicu Klosov obrazac pretvara u računsku alatku ovog zadatka.
 
 **Korisna uprošćenja** (iznosi ih i original). Kod mašina većih snaga otpornost statorskog
 namotaja je znatno manja od zbira rasipnih reaktansi:
@@ -257,18 +253,13 @@ momenata**:
   naponu) i nominalnog momenta. Obično se kreće u opsegu $2$ – $3$.
 
 Sledeća slika prikazuje momentnu karakteristiku sa označenim karakterističnim radnim tačkama —
-ovog puta nacrtanu na "kataloški" način: na horizontalnoj osi nije klizanje već **relativna
-brzina** $n/n_{\mathrm{s}}$ (raste udesno od $0$ do $1$), a na vertikalnoj **relativni moment**
-$M/M_{\mathrm{n}}$. Tačka **C** (levo, pri $n = 0$) je polazni moment; tačka **B** (vrh krive) je
-prevalni moment; tačka **A** (pri $M/M_{\mathrm{n}} = 1$, blizu sinhrone brzine) je nominalna
-radna tačka — mali razmak od tačke A do $n/n_{\mathrm{s}} = 1$ jeste nominalno klizanje. Rastojanje
-između krive motora i horizontalne linije opterećenja označeno je kao moment ubrzanja. Zgodna
-podudarnost: kriva na slici ima polazni moment oko $1{,}25\,M_{\mathrm{n}}$ i prevalni
-$2{,}5\,M_{\mathrm{n}}$ — praktično baš motor iz našeg zadatka.
+ovog puta nacrtanu na "kataloški" način.
 
 ![Relativna momentna karakteristika asinhrone mašine sa označenim polaznim (C), prevalnim (B) i nominalnim (A) momentom](../slike/fig-47.2.png)
 
 **Slika 47.2 —** Relativni momenti asinhrone mašine.
+
+> **Kako čitati sliku 47.2:** Ista karakteristika kao na slici 47.1, ali nacrtana „kataloški". Horizontalna osa je **relativna brzina** $n/n_{\mathrm{s}}$ (bezdimenziona, od $0$ do $1$; podeoci na $0{,}1$) — pazi, sada brzina raste udesno, obrnuto nego na slici 47.1. Vertikalna osa je **relativni moment** $M/M_{\mathrm{n}}$ (od $0$ do $2{,}5$); plava tačkasta mreža služi za očitavanje. Debela **crvena kriva** je momentna karakteristika motora, a na njoj su tri crne tačke sa plavim natpisima: **C** (skroz levo, $n = 0$, $M/M_{\mathrm{n}} = 1{,}25$) — „Polazni moment"; **B** (vrh krive, oko $n/n_{\mathrm{s}} \approx 0{,}75$, $M/M_{\mathrm{n}} = 2{,}5$) — „Prevalni moment"; **A** (na strmoj opadajućoj grani, $M/M_{\mathrm{n}} = 1$ pri $n/n_{\mathrm{s}} \approx 0{,}93$) — „Nominalni moment", tj. nominalna radna tačka. Mali razmak od tačke A do desnog kraja ose ($n/n_{\mathrm{s}} = 1$), obeležen crvenim strelicama i natpisom „Klizanje", jeste nominalno klizanje. **Zelena horizontalna linija** na visini $M/M_{\mathrm{n}} = 1$ je linija opterećenja nominalnim momentom; crvena dvosmerna strelica „Moment ubrzanja" pokazuje vertikalno rastojanje između crvene krive i te linije — višak momenta koji tokom zaleta ubrzava rotor. Zgodna podudarnost: kriva ima polazni moment $1{,}25\,M_{\mathrm{n}}$ i prevalni $2{,}5\,M_{\mathrm{n}}$ — praktično baš motor iz našeg zadatka ($37{,}5$ i $75\ \mathrm{Nm}$ uz $M_{\mathrm{n}} = 30\ \mathrm{Nm}$); naša radna tačka, međutim, nije A, nego leži nešto niže i desno od nje: $M/M_{\mathrm{n}} = 24/30 = 0{,}8$ pri $n/n_{\mathrm{s}} = 0{,}956$. Šta treba da zaključiš: katalog ti preko tačaka C i B daje upravo dva odnosa momenata ($1{,}25$ i $2{,}5$) — tačno ono što Klosovom obrascu treba da rekonstruiše celu krivu bez ijedne otpornosti i reaktanse.
 
 ### Mini-lekcija 7: Klosov obrazac
 
@@ -374,18 +365,14 @@ $$\left(\frac{M}{M_{\mathrm{pr}}}\right)_{s \gg s_{\mathrm{pr}}} = \frac{2 \cdot
 — hiperbola, koja dobro aproksimira deo krive oko polaznog klizanja $s = 1$ i u području
 kočionog režima.
 
-Obe aproksimacije prikazuje sledeća slika. Čitaj je ovako: na horizontalnoj osi je klizanje $s$
-(od generatorskog područja levo, preko motorskog, do kočionog desno od $s = 1$), na vertikalnoj
-relativni moment $M/M_{\mathrm{pr}}$. Crvena kriva je tačan Klosov obrazac; zelena prava
-$\frac{2 s}{s_{\mathrm{pr}}}$ prianja uz nju oko $s = 0$; siva hiperbola
-$\frac{2 s_{\mathrm{pr}}}{s}$ prianja uz nju za velika klizanja (i pozitivna i negativna). Vidi
-se i da se sve tri linije seku baš oko prevala, gde nijedna aproksimacija ne važi (obe tamo daju
-$2$ umesto tačne vrednosti $1$).
+Obe aproksimacije prikazuje sledeća slika.
 
 ![Uprošćena Klosova aproksimacija momentne karakteristike: tačna kriva, linearna aproksimacija za mala klizanja i hiperbolična za velika klizanja](../slike/fig-47.3.png)
 
 **Slika 47.3 —** Uprošćena Klosova aproksimacija momentne karakteristike za dovoljno mala i
 dovoljno velika klizanja.
+
+> **Kako čitati sliku 47.3:** Horizontalna osa je klizanje $s$ (od oko $-1{,}2$ levo do oko $+1{,}4$ desno; podeoci na $0{,}5$), vertikalna je relativni moment $M/M_{\mathrm{pr}}$ (od $-2$ do $+2$; vrednost $1$ znači „tačno prevalni moment"). Vertikalne plave linije stoje na $s = 0$ i $s = 1$, a plavi kurzivni natpisi obeležavaju područja: *Generator* (levo, $s < 0$), *Motor* ($0 < s < 1$) i *Kočnica* ($s > 1$). Tri linije, po boji: **crvena kriva** (obeležena $M/M_{\mathrm{pr}}$) je tačan uprošćeni Klosov obrazac $\frac{M}{M_{\mathrm{pr}}} = \frac{2}{s/s_{\mathrm{pr}} + s_{\mathrm{pr}}/s}$ — dostiže $+1$ u $s = s_{\mathrm{pr}}$ (na ovom crtežu uzeto je $s_{\mathrm{pr}} \approx 0{,}2$; kod našeg motora bilo bi $0{,}268$) i $-1$ u $s = -s_{\mathrm{pr}}$, a kroz $s = 0$ prolazi kroz nulu; **zelena prava** (obeležena $2\cdot s/s_{\mathrm{pr}}$) je linearna aproksimacija za mala klizanja — prolazi kroz koordinatni početak i prianja uz crvenu krivu za $|s| \ll s_{\mathrm{pr}}$ (radni deo karakteristike); **siva hiperbola** (obeležena $2\cdot s_{\mathrm{pr}}/s$, i gore desno i dole levo) je aproksimacija za velika klizanja — prianja uz crvenu krivu za $|s| \gg s_{\mathrm{pr}}$, dakle oko polaska ($s = 1$), u kočionom području i u dubokom generatorskom području. Karakteristično je mesto gde se linije približavaju jedna drugoj oko prevala: tamo nijedna aproksimacija ne važi — u $s = s_{\mathrm{pr}}$ i zelena i siva daju vrednost $2$, a tačna je $1$ (greška od čak $100\ \%$). Šta treba da zaključiš: linearnu aproksimaciju smeš koristiti samo za $s \ll s_{\mathrm{pr}}$ (kao u Proveri smisla, gde je $s = 0{,}044 \ll 0{,}268$), hiperboličnu samo za $s \gg s_{\mathrm{pr}}$; u okolini prevala mora tačan Klosov obrazac.
 
 ## Rešenje, korak po korak
 

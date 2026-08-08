@@ -413,31 +413,42 @@ međurezultata.)
 na oko $56\,\%$ nazivnih vrednosti, što je logično jer i tražena sinhrona brzina
 ($843{,}75\ \mathrm{min^{-1}}$) iznosi $56{,}25\,\%$ nazivne ($1500\ \mathrm{min^{-1}}$).
 
-Sledeća slika prikazuje momentne karakteristike $M(n)$ motora za obe učestanosti: desna (plava)
-kriva je za nazivno napajanje ($U_{sn}, f_{sn}$), a leva (zelena) za upravo izračunato napajanje
-($U_{s1}, f_{s1}$) = ($123{,}77\ \mathrm{V}$, $28{,}13\ \mathrm{Hz}$). Horizontalna crvena linija je
-konstantni moment tereta $M_t = 22\ \mathrm{Nm}$. Čitaj je ovako: radna tačka je presek krive
-motora sa linijom tereta na **opadajućem (stabilnom) delu** krive; obe krive imaju **isto teme**
-($69{,}4\ \mathrm{Nm}$) i **isti nagib** radnog dela — niža učestanost samo pomera krivu ulevo.
-Zato je horizontalno rastojanje radne tačke od "nule" krive (sinhrone brzine) na obe krive isto:
-$\Delta n_1 = \Delta n_n = n_k = 93{,}75\ \mathrm{min^{-1}}$ — upravo tvrdnja iz mini-lekcije 6(ii).
-Presek zelene krive sa linijom tereta jeste tražena radna tačka na $750\ \mathrm{min^{-1}}$.
-
-> **Napomena uz sliku:** slika je preuzeta iz zbirke i **kvalitativna** je (principska, nije u
-> razmeri) — krive su na njoj nacrtane sa znatno manjim prevalnim klizanjem od izračunatog. Po
-> našem računu teme plave krive je na $\approx 924\ \mathrm{min^{-1}}$ (Korak 4:
-> $s_{\mathrm{pr}} = 0{,}384$), teme zelene čak na $\approx 267\ \mathrm{min^{-1}}$, a padovi
-> brzine iznose $93{,}75\ \mathrm{min^{-1}}$ — dok su na slici temena nacrtana mnogo bliže
-> sinhronim brzinama (plavo na $\approx 1390$, zeleno na $\approx 730\ \mathrm{min^{-1}}$), a
-> rastojanja $\Delta n$ deluju kao svega desetak $\mathrm{min^{-1}}$. Slika verno ilustruje
-> **princip** — jednaka temena, jednak nagib radnog dela, čista translacija krive ulevo — ali sa
-> nje ne treba očitavati brojne vrednosti; brojevi važe iz računa.
+Sledeća slika prikazuje momentne karakteristike $M(n)$ motora za obe učestanosti napajanja,
+zajedno sa linijom momenta tereta.
 
 ![Momentne karakteristike motora za frekvencije napajanja fsn i fs1 uz uslov U/f = const.](../slike/fig-51.1.png)
 
 **Slika 51.1 —** Momentne karakteristike motora za frekvencije napajanja $f_{sn}$ i $f_{s1}$ uz
 uslov $U/f = \mathrm{const.}$ Obe krive imaju jednak prevalni moment i jednak nagib radnog dela,
 pa je pad brzine pod istim teretom jednak: $\Delta n_1 = \Delta n_n$.
+
+> **Kako čitati sliku 51.1:** Dijagram momentnih karakteristika. Horizontalna osa: brzina
+> obrtanja u $\mathrm{ob/min}$, od $0$ do $1500$; vertikalna osa: moment u $\mathrm{Nm}$, od $0$
+> do $70$. **Plava kriva** (označena „$U_{sn}, f_{sn}$") je karakteristika pri nazivnom napajanju
+> ($220\ \mathrm{V}$, $50\ \mathrm{Hz}$): raste od $\approx 10\ \mathrm{Nm}$ pri $n = 0$, dostiže
+> teme od $69{,}4\ \mathrm{Nm}$, pa strmo pada kroz nulu tačno u sinhronoj brzini
+> $1500\ \mathrm{min^{-1}}$. **Zelena kriva** („$U_{s1}, f_{s1}$") je karakteristika pri
+> izračunatom napajanju $123{,}77\ \mathrm{V}$, $28{,}13\ \mathrm{Hz}$: identičnog je oblika i
+> **iste visine temena** ($69{,}4\ \mathrm{Nm}$ — jer je količnik $U/f$ isti), samo je cela
+> translirana ulevo, sa nulom u novoj sinhronoj brzini $843{,}75\ \mathrm{min^{-1}}$. **Crvena
+> horizontalna linija** je konstantni moment tereta $M_t = 22\ \mathrm{Nm}$. Radne tačke su
+> preseci krivih sa crvenom linijom na **opadajućem (stabilnom) delu**: za plavu krivu na
+> $1500 - 93{,}75 \approx 1406\ \mathrm{min^{-1}}$, za zelenu — tražena radna tačka na
+> $750\ \mathrm{min^{-1}}$. Strelice sa oznakama $\Delta n_1 = \Delta n_n$ (uz zelenu) i
+> $\Delta n_n$ (uz plavu) pokazuju horizontalno rastojanje radne tačke od nule (sinhrone brzine)
+> svake krive — pad brzine, koji je na obe krive **isti**: $n_k = 93{,}75\ \mathrm{min^{-1}}$,
+> upravo tvrdnja iz mini-lekcije 6(ii). (Iznad dijagrama na ovom isečku vide se i formule iz
+> zbirke za $f_{sa}$ i $U_{sa}$ — iste koje smo upravo izveli.) **Pažnja — slika je principska,
+> nije u razmeri:** krive su nacrtane sa znatno manjim prevalnim klizanjem od izračunatog; po
+> računu je teme plave krive na $\approx 924\ \mathrm{min^{-1}}$ (Korak 4:
+> $s_{\mathrm{pr}} = 0{,}384$), teme zelene čak na $\approx 267\ \mathrm{min^{-1}}$, a padovi
+> brzine iznose $93{,}75\ \mathrm{min^{-1}}$ — dok su na slici temena nacrtana mnogo bliže
+> sinhronim brzinama (plavo na $\approx 1390$, zeleno na $\approx 730\ \mathrm{min^{-1}}$), a
+> rastojanja $\Delta n$ deluju kao svega desetak $\mathrm{min^{-1}}$; brojne vrednosti zato uvek
+> uzimaj iz računa, a sa slike samo princip. Šta treba da zaključiš: pri
+> $U/f = \mathrm{const.}$ smanjenje učestanosti samo pomera karakteristiku ulevo, bez promene
+> temena i nagiba — pa se ista brzinska „cena" tereta ($93{,}75\ \mathrm{min^{-1}}$) plaća na
+> svakoj učestanosti, što je ključ rešenja dela (a).
 
 ### Korak 8 (početak dela b): Do koje učestanosti motor još može da nosi teret?
 
@@ -534,30 +545,37 @@ stabilnosti**: motor tada radi tačno u prevalnoj tački, pa bi i najmanji poras
 (ili dalji porast učestanosti) izazvao "prevaljivanje" i zaustavljanje motora. U praksi bi se
 ostavila sigurnosna rezerva.
 
-Sledeća slika prikazuje situaciju iz dela (b): plava kriva je karakteristika za nazivno napajanje
-($U_{sn}, f_{sn}$), a **tamnozelena** za granično napajanje ($U_{sb} = U_{sn} = 220\ \mathrm{V}$,
-$f_{sb} = 88{,}8\ \mathrm{Hz}$). Pazi na boje: za razliku od slike 51.1 (gde je teret bio crvena
-linija), ovde je horizontalna **svetlozelena** linija teret $M_t = 22\ \mathrm{Nm}$ — ne pomešaj
-je sa tamnozelenom karakteristikom. Čitaj sliku ovako: za razliku od slike 51.1, zelena kriva
-sada **nije** samo pomerena udesno — njeno teme je **spljošteno** (prevalni moment je pao sa
-$69{,}4\ \mathrm{Nm}$ tačno na $22\ \mathrm{Nm}$, jer je $U/f$ opao). Teme tamnozelene krive
-taman **dodiruje** liniju tereta — to je tačka $M_{\mathrm{prb}} = M_t$, označena na slici, i
-njena apscisa je maksimalna brzina $n_{\max} = n_b$; desno od temena kriva pada ka nuli na
-sinhronoj brzini $n_{sb}$.
-
-> **Napomena uz sliku:** i ova slika iz zbirke je **principska** (nije u razmeri): teme zelene
-> krive i oznaka $n_{\max}$ nacrtani su na $\approx 2550\ \mathrm{min^{-1}}$, tik uz $n_{sb}$ —
-> kao da je prevalno klizanje svega $\approx 0{,}04$. Prema izračunatom
-> $s_{\mathrm{prb}} = 0{,}2164$ teme se stvarno nalazi na $n_b \approx 2087\ \mathrm{min^{-1}}$,
-> čitavih $\approx 577\ \mathrm{min^{-1}}$ levo od $n_{sb} \approx 2664\ \mathrm{min^{-1}}$. Sa
-> slike, dakle, čitaj samo ideju da teme **dodiruje** liniju tereta i da je ta tačka dodira
-> maksimalna brzina; brojne vrednosti uzimaj iz računa.
+Sledeća slika prikazuje situaciju iz dela (b): nazivnu karakteristiku i karakteristiku pri
+graničnom napajanju, čije teme taman dodiruje liniju tereta.
 
 ![Momentne karakteristike motora za frekvencije napajanja fsn i fsb > fsn — uslov za maksimalnu ostvarivu brzinu obrtanja](../slike/fig-51.2.png)
 
 **Slika 51.2 —** Momentne karakteristike motora za frekvencije napajanja $f_{sn}$ i $f_{sb} > f_{sn}$.
 Uslov za maksimalnu ostvarivu brzinu obrtanja pogona za dato opterećenje: teme karakteristike na
 $f_{sb}$ tačno dodiruje liniju momenta tereta ($M_{\mathrm{prb}} = M_t$), što određuje $n_{\max}$.
+
+> **Kako čitati sliku 51.2:** Dijagram momentnih karakteristika za deo (b). Horizontalna osa:
+> brzina u $\mathrm{ob/min}$, sada do $3000$; vertikalna osa: moment u $\mathrm{Nm}$, od $0$ do
+> $70$. **Plava kriva** („$U_{sn}, f_{sn}$") je ista nazivna karakteristika kao na slici 51.1:
+> teme $69{,}4\ \mathrm{Nm}$, nula u $1500\ \mathrm{min^{-1}}$. **Tamnozelena kriva**
+> („$U_{sb}, f_{sb}$") je karakteristika pri graničnom napajanju
+> $U_{sb} = U_{sn} = 220\ \mathrm{V}$, $f_{sb} = 88{,}8\ \mathrm{Hz}$ — i pazi: ona sada **nije**
+> samo pomerena udesno kao u delu (a), nego joj je teme i **spljošteno**, jer je količnik $U/f$
+> opao pa je prevalni moment pao kvadratno, tačno na $M_{\mathrm{prb}} = 22\ \mathrm{Nm}$.
+> **Svetlozelena horizontalna linija** je moment tereta $M_t = 22\ \mathrm{Nm}$ — ne pomešaj je
+> sa tamnozelenom karakteristikom (na slici 51.1 teret je bio crvena linija). Ključna
+> karakteristična tačka označena je strelicom sa natpisom „$M_{prb} = M_t \Rightarrow n_{max}$":
+> teme tamnozelene krive taman **dodiruje** liniju tereta; iz temena je spuštena vertikalna crta
+> do apscise, uz koju stoji oznaka $n_{max}$ — to je maksimalna ostvariva brzina. Desno od temena
+> kriva pada kroz nulu u sinhronoj brzini $n_{sb}$. **Pažnja — i ova slika je principska, nije u
+> razmeri:** teme i oznaka $n_{max}$ nacrtani su na $\approx 2550\ \mathrm{min^{-1}}$, tik uz
+> $n_{sb}$, kao da je prevalno klizanje svega $\approx 0{,}04$; prema izračunatom
+> $s_{\mathrm{prb}} = 0{,}2164$ teme se stvarno nalazi na $n_b \approx 2087\ \mathrm{min^{-1}}$,
+> čitavih $\approx 577\ \mathrm{min^{-1}}$ levo od $n_{sb} \approx 2664\ \mathrm{min^{-1}}$ — sa
+> slike čitaj samo ideju dodira, a brojeve iz računa. Šta treba da zaključiš: u režimu slabljenja
+> polja „plafon" momenta pada sa $1/f^2$, i granica pogona je geometrijski tačno trenutak kada
+> teme karakteristike dodirne liniju tereta — apscisa te tačke dodira je najveća brzina koju ovaj
+> teret dopušta ($\approx 2087\ \mathrm{min^{-1}}$ po računu).
 
 ## Česte greške i zamke
 

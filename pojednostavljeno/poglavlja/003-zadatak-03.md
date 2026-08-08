@@ -279,16 +279,15 @@ sa podatkom da daje induktivnu struju (reaktivnu snagu u mrežu).
 pretvaramo je u dve skalarne jednačine projektovanjem (mini-lekcija 7). Dijagram nam pokazuje
 uglove i čuva nas od grešaka u znaku.
 
-Sledeća slika prikazuje fazorski dijagram prvog režima. Čitaj je ovako: uspravna strelica je napon
-mreže $\underline{U}_{\mathrm{f}}$; struja $\underline{I}_{\mathrm{f}}$ je zakrenuta za ugao
-$\varphi$ **iza** napona (udesno-nadole, jer je induktivna); na vrh napona nadovezan je pad
-$jX_S\underline{I}_{\mathrm{f}}$, upravan na pravac struje (isprekidana linija pomaže oku da vidi
-tu upravnost); dijagonala od početka do vrha tog pada je EMS $\underline{E}_{0f}$, koja prednjači
-naponu za ugao opterećenja $\delta$.
+Sledeća slika prikazuje fazorski dijagram prvog režima — crtež jednačine
+$\underline{E}_{0f} = \underline{U}_{\mathrm{f}} + jX_S\underline{I}$ sa svim uglovima koji ulaze
+u jednačine (1) i (2).
 
 ![Fazorski dijagram turbogeneratora za prvi režim rada: napon, zaostajuća struja, pad napona na sinhronoj reaktansi i EMS koja prednjači za ugao delta](../slike/fig-3.1.png)
 
 **Slika 3.1 —** Fazorski dijagram turbogeneratora za prvi režim rada (nadpobuđen generator, induktivna struja).
+
+> **Kako čitati sliku 3.1:** Dijagram je nacrtan crno-belo, pa se fazori raspoznaju po oznakama (podvlaka ispod simbola = fazor). **Referentni fazor je napon mreže $\underline{U}_{\mathrm{f}}$** ($11{,}55\ \mathrm{kV}$), nacrtan uspravno; pozitivni uglovi (prednjačenje) mere se od njega suprotno smeru kazaljke na satu. Struja $\underline{I}_{\mathrm{f}}$ ($721{,}69\ \mathrm{A}$; ona je u amperima, naponi u voltima, pa njena dužina na crtežu nije u istoj razmeri) zakrenuta je za ugao $\varphi = 36{,}87^\circ$ **iza** napona, tj. udesno-nadole — opterećenje je induktivno, struja kasni (ugao $\varphi$ je ucrtan uz koordinatni početak). Isprekidane linije produžavaju pravac struje i pravac upravan na nju: one pomažu oku da vidi da je pad $jX_S\underline{I}_{\mathrm{f}}$ — strelica nadovezana na vrh $\underline{U}_{\mathrm{f}}$ — **upravan na struju** (zakrenut $90^\circ$ unapred od nje); njegova dužina je $X_S I_{\mathrm{nf}} = 12{,}57\cdot 721{,}69 \approx 9{,}07\ \mathrm{kV}$. Strelica od koordinatnog početka do vrha tog pada je EMS $\underline{E}_{0f} = 18{,}48\ \mathrm{kV}$ (očitana iz karakteristike praznog hoda za $I_P = 100\ \mathrm{A}$); ona prednjači naponu za ugao opterećenja $\delta_{\mathrm{n}} = 23{,}13^\circ$ (ucrtan između $\underline{E}_{0f}$ i $\underline{U}_{\mathrm{f}}$), a sa strujom zaklapa ukupno $\varphi_{\mathrm{n}} + \delta_{\mathrm{n}} = 60^\circ$ — upravo uglovi koji figurišu u jednačinama (1) i (2). Šta treba da zaključiš: $E_{0f} > U_{\mathrm{f}}$ uz struju koja kasni je slika nadpobuđenog generatora koji daje reaktivnu snagu mreži, a iz ovog trougla — projektovanjem na pravac struje i upravno na njega — izvlačimo $\delta_{\mathrm{n}}$ i sinhronu reaktansu $X_S$.
 
 Sa dijagrama: ugao između $\underline{U}_{\mathrm{f}}$ i $\underline{I}_{\mathrm{f}}$ je
 $\varphi_{\mathrm{n}}$, a ugao između $\underline{E}_{0f}$ i $\underline{I}_{\mathrm{f}}$ je
@@ -390,15 +389,14 @@ u drugom režimu je ostala samo aktivna komponenta struje iz prvog režima.
 **Zašto ovaj korak:** Tražena struja pobude čita se sa karakteristike praznog hoda — ali za to
 prvo moramo znati koliku EMS mašina treba da indukuje u drugom režimu.
 
-Sledeća slika prikazuje fazorski dijagram drugog režima. Čitaj je ovako: struja
-$\underline{I}_{\mathrm{f}}$ je sada **u fazi** sa naponom $\underline{U}_{\mathrm{f}}$ (obe
-strelice uspravne, jedna preko druge) jer je $\cos\varphi = 1$; pad $jX_S\underline{I}_{\mathrm{f}}$
-je upravan na struju, dakle sada i na napon — vodoravna strelica na vrhu napona; EMS
-$\underline{E}_{0f}$ je hipotenuza pravouglog trougla i prednjači naponu za ugao $\delta$.
+Sledeća slika prikazuje fazorski dijagram drugog režima, u kome naponski trougao postaje
+pravougli.
 
 ![Fazorski dijagram turbogeneratora za drugi režim rada: struja u fazi sa naponom, pad napona upravan na napon, EMS kao hipotenuza pravouglog trougla](../slike/fig-3.2.png)
 
 **Slika 3.2 —** Fazorski dijagram turbogeneratora za drugi režim rada ($\cos\varphi = 1$).
+
+> **Kako čitati sliku 3.2:** Ista konstrukcija kao na slici 3.1, ali za režim $\cos\varphi = 1$. Referentni napon $\underline{U}_{\mathrm{f}}$ ($11{,}55\ \mathrm{kV}$) opet je uspravan, a struja $\underline{I}_{\mathrm{f}}$ ($577{,}35\ \mathrm{A}$) nacrtana je **na istom pravcu** — kraća strelica preko napona — jer je sada u fazi sa njim; ugla $\varphi$ više nema. Zbog toga je pad $jX_S\underline{I}_{\mathrm{f}}$, dužine $X_S I = 12{,}57\cdot 577{,}35 \approx 7{,}26\ \mathrm{kV}$, upravan i na struju **i na napon**: to je vodoravna strelica ulevo na vrhu $\underline{U}_{\mathrm{f}}$. Trougao koji čine $\underline{U}_{\mathrm{f}}$, $jX_S\underline{I}_{\mathrm{f}}$ i $\underline{E}_{0f}$ je zato **pravougli**, pa je hipotenuza $E_{0f} = \sqrt{11{,}55^2 + 7{,}26^2} = 13{,}64\ \mathrm{kV}$ (Korak 8); ona prednjači naponu za ugao opterećenja $\delta$ (ucrtan), koji se sa slike može i očitati: $\delta = \mathrm{arctg}\,(7{,}26/11{,}55) \approx 32^\circ$ — veći nego u prvom režimu, jer manja EMS nosi istu aktivnu snagu. Šta treba da zaključiš: pri $\cos\varphi = 1$ fazorska jednačina degeneriše u Pitagorinu teoremu (zato je Korak 8 tako kratak), a pošto je nova hipotenuza ($13{,}64\ \mathrm{kV}$) kraća od stare EMS ($18{,}48\ \mathrm{kV}$), pobudu treba **smanjiti** — to je fizički smisao rezultata $I_P = 68{,}32\ \mathrm{A}$.
 
 Pošto su kateta $U_{\mathrm{f}}$ i kateta $X_S I$ pod pravim uglom, EMS (hipotenuza) sledi iz
 Pitagorine teoreme (mini-lekcija 7, specijalan slučaj):

@@ -80,11 +80,26 @@ Prvi oblik kaže: električna ugaona učestanost $2\pi f_s$ podeljena brojem par
 
 ### Mini-lekcija 3: Princip rada — zašto se rotor uopšte vrti
 
-Sledeća slika prikazuje sam princip: obrtno magnetno polje (predstavljeno polovima N i S koji kruže, crvene strelice pokazuju smer obrtanja) obuhvata kavezni rotor sa provodnim šipkama. Čitaj je ovako: polje se vrti, rotor u početku miruje, pa se provodnici rotora *relativno* kreću kroz polje.
+Sledeća slika prikazuje sam princip: obrtno magnetno polje obuhvata kavezni rotor sa provodnim šipkama; detaljno čitanje slike je u bloku ispod nje.
 
 ![Princip rada asinhrone mašine: obrtno magnetno polje N–S rotira oko kaveznog rotora](../slike/fig-28.1.png)
 
 **Slika 28.1 —** Princip rada asinhrone mašine: rotirajuće magnetno polje statora obuhvata kratko spojeni (kavezni) rotor.
+
+> **Kako čitati sliku 28.1:** Ovo je pojednostavljen, "crtani" prikaz bez osa i brojeva —
+> čitaju se samo elementi i smerovi. U sredini je kavezni rotor (natpis "Rotor"): dva čeona
+> prstena (nacrtana kao kolutovi sa vidljivim otvorima) međusobno spojena kosim provodnim
+> šipkama — to je onaj "kavez za veverice" iz mini-lekcije 1; šipke su neizolovane i na oba
+> kraja kratko spojene prstenovima. Oko rotora su dva lučna magnetna pola koji simbolizuju
+> obrtno polje statora: plavi luk označen N (severni pol, gore levo) i crveni luk označen S
+> (južni pol, dole desno) — u stvarnoj mašini ti polovi ne postoje kao komadi gvožđa, nego
+> ih stvara trofazni sistem struja u statorskim namotajima. Dve crvene zakrivljene strelice
+> (jedna gore desno, druga dole levo) pokazuju smer obrtanja para polova — na crtežu
+> suprotno kazaljci na satu; plavi natpis "Rotirajuće magnetno polje" imenuje upravo to.
+> Šta treba da zaključiš: polje kruži, a rotor u prvom trenutku miruje, pa polje "seče"
+> šipke — indukuje se elektromotorna sila, kroz kratko spojen kavez potekne struja, na
+> provodnike sa strujom u polju deluje sila — i rotor kreće za poljem, ali ga (kako
+> objašnjava lanac uzroka i posledica u nastavku) nikada ne sustiže.
 
 Lanac uzroka i posledica je sledeći:
 
@@ -96,11 +111,33 @@ Ključna posledica: rotor motora **nikada ne može da dostigne** sinhronu brzinu
 
 ### Mini-lekcija 4: Principijelna šema i oznake
 
-Sledeća slika prikazuje principijelnu (načelnu) šemu asinhrone mašine — nacrtana je kliznokolutna, kao opštiji slučaj. Čitaj je odozgo nadole: gore su tri mrežna voda ($L_1, L_2, L_3$) i prekidač, ispod njih tri statorska fazna namotaja, pa (preko vazdušnog zazora, magnetnom spregom, bez ijedne žice!) tri rotorska namotaja, klizni kolutovi i spolja dodati otpornici.
+Sledeća slika prikazuje principijelnu (načelnu) šemu asinhrone mašine — nacrtana je kliznokolutna, kao opštiji slučaj; detaljno čitanje šeme je u bloku ispod slike.
 
 ![Principijelna šema kliznokolutne asinhrone mašine sa označenim veličinama statora i rotora](../slike/fig-28.2.png)
 
 **Slika 28.2 —** Principijelna šema kliznokolutne asinhrone mašine sa oznakama.
+
+> **Kako čitati sliku 28.2:** Šemu čitaj kao put energije, odozgo nadole. Na vrhu su tri
+> horizontalna voda mreže, označena $L_1$, $L_2$, $L_3$; sa njih se preko trofaznog
+> prekidača (tri zadebljane kose crte — kontakti koji se zatvaraju istovremeno) napajaju
+> tri statorska fazna namotaja, nacrtana kao tri **sive** zavojnice. Uz njih stoje oznake
+> $N_s$ i $k_{ns}$ (broj navojaka i navojni sačinilac statora), $U_s$ i $U_{sf}$ (linijski
+> i fazni napon) i $f_s$ (statorska frekvencija), a **crvena** strelica uz dovod označava
+> faznu struju $I_{sf}$; donji krajevi namotaja spojeni su u zajedničku tačku (zvezdište).
+> Ispod statora — pažnja, **bez ijedne provodne veze između** — nacrtane su tri **crvene**
+> zavojnice: rotorski namotaji, sa oznakama $N_r$, $k_{nr}$, naponom $U_{rf}$, frekvencijom
+> $f_r$ i strujom $I_{rf}$ (crvena strelica). Boja ovde nosi poruku: sivi (statorski) i
+> crveni (rotorski) trofazni sistem povezani su isključivo magnetnim poljem preko
+> vazdušnog zazora. Horizontalna crta-tačka linija kroz rotorske namotaje je osa vratila
+> (simboli na njenim krajevima označavaju da se rotor obrće), a krajevi rotorskih namotaja
+> izvedeni su na tri klizna koluta sa četkicama (pravougaonici sa zacrnjenim kontaktom,
+> uz oznaku $U_r$) i dalje na tri promenljiva otpornika $R_{rd}$ (cik-cak simboli sa
+> strelicom), spojena u zajedničku tačku — to je spolja dodati otpor u rotorskom kolu,
+> koji postoji samo kod kliznokolutne mašine (kod kavezne je rotor direktno kratko
+> spojen). Šta treba da zaključiš: asinhrona mašina su dva trofazna sistema — statorski na
+> frekvenciji $f_s$ i rotorski na frekvenciji $f_r$ — spregnuta samo magnetno, kao
+> transformator čiji se sekundar obrće; značenje svake pojedinačne oznake pobrojano je u
+> spisku odmah ispod.
 
 Značenje oznaka na slici (ove oznake koristi cela zbirka, pa ih ovde uvodimo jednom za svagda):
 
@@ -151,11 +188,27 @@ Vrednost klizanja odmah otkriva u kom režimu mašina radi. Prođimo kroz sve sl
 - $n_r > n_s \Rightarrow s < 0$ — rotor je pogonjen spolja brže od polja, prednjači mu: **generatorski režim** (mašina predaje električnu energiju mreži).
 - $n_r < 0 \Rightarrow s > 1$ — rotor se vrti *suprotno* od polja: **režim kočnice** (obrtno polje aktivno koči rotor; ovako se npr. naglo zaustavljaju pogoni).
 
-Sledeća slika sve ovo sažima u jedan grafik. Čitaj je ovako: na horizontalnoj osi je brzina rotora $n_r$, na vertikalnoj klizanje $s$; crvena prava je zavisnost $s(n_r)$ — opadajuća prava linija (jer je $s$ linearna funkcija od $n_r$) koja seče vertikalnu osu u $s=1$ (rotor stoji) i horizontalnu osu u $n_r = n_s$ (sinhronizam, $s=0$). Ispod ose su označena tri režima: levo od nule kočnica, između $0$ i $n_s$ motor, desno od $n_s$ generator.
+Sledeća slika sve ovo sažima u jedan grafik; detaljno čitanje je u bloku ispod slike.
 
 ![Grafik zavisnosti klizanja od brzine rotora sa označenim režimima rada: kočnica, motor, generator](../slike/fig-28.3.png)
 
 **Slika 28.3 —** Klizanje u zavisnosti od brzine obrtanja rotora i režimi rada asinhrone mašine.
+
+> **Kako čitati sliku 28.3:** Ose su nacrtane plavo: horizontalna osa je brzina rotora
+> $n_r$ (u $\mathrm{min^{-1}}$; raste udesno, a levo od koordinatnog početka su negativne
+> brzine — rotor koji se vrti suprotno od polja), vertikalna osa je klizanje $s$
+> (bezdimenzioni broj). Debela **crvena** prava je zavisnost $s(n_r) = (n_s - n_r)/n_s$ —
+> opadajuća prava linija, jer je $s$ linearna (opadajuća) funkcija od $n_r$. Dve
+> karakteristične tačke su obeležene na osama: presek sa vertikalnom osom u $s = 1$ (rotor
+> stoji, $n_r = 0$ — trenutak polaska) i presek sa horizontalnom osom u $n_r = n_s$
+> (sinhronizam, $s = 0$; zelena isprekidana vertikala spušta tu tačku na donju traku; za
+> naš motor $n_s = 1500\ \mathrm{min^{-1}}$). Ispod grafika crvena traka sa strelicama
+> deli opseg brzina na tri režima, ispisana kurzivom: "kočnica" levo od $n_r = 0$ (tamo je
+> $s > 1$), "motor" između $0$ i $n_s$ (tamo je $0 < s < 1$; nazivna tačka našeg motora,
+> $n_r = 1460\ \mathrm{min^{-1}}$ uz $s = 0{,}0267$, leži u ovom pojasu, sasvim blizu
+> desnog kraja) i "generator" desno od $n_s$ (tamo je $s < 0$). Šta treba da zaključiš:
+> već sam znak i veličina klizanja jednoznačno kazuju režim rada mašine — dovoljno je
+> uporediti brzinu rotora sa sinhronom brzinom.
 
 ### Mini-lekcija 7: Rotorska frekvencija $f_r = s \cdot f_s$
 

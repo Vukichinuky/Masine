@@ -8,7 +8,7 @@
 |---|---|
 | `zbirka/Elektricne-masine-2-zbirka-kompletna.pdf` | Kompletna zbirka, str. 1–208, spojena iz šest delova |
 | `zbirka/delovi/deo-1-str-001-035.pdf` … `deo-6-str-175-208.pdf` | Izvorni delovi zbirke |
-| `pojednostavljeno/Elektricne-masine-2-pojednostavljeno-svi-zadaci.pdf` | **Kompletna pojednostavljena knjiga (879 str.): uvodne teorije + svih 59 zadataka od postavke do rešenja, svaki korak objašnjen** |
+| `pojednostavljeno/Elektricne-masine-2-pojednostavljeno-svi-zadaci.pdf` | **Kompletna pojednostavljena knjiga (931 str.): uvodne teorije + svih 59 zadataka od postavke do rešenja, svaki korak objašnjen** |
 | `pojednostavljeno/poglavlja/` | Izvorna Markdown poglavlja (uvod za sinhrone, zadaci 1–27, uvod za asinhrone, zadaci 28–59) |
 | `pojednostavljeno/slike/` | Svih 107 slika (grafikoni, šeme, fazorski dijagrami) izvučenih iz originala |
 

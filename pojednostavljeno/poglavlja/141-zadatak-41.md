@@ -122,11 +122,36 @@ $$I_r = \frac{E_{r0}}{\sqrt{\left(\dfrac{R_r}{s}\right)^2 + X_{\gamma r}^2}}$$
 
 **Šta smo time dobili:** kolo u kome figuriše *puna* EMS $E_{r0}$ i *stalna* reaktansa $X_{\gamma r}$, a sva zavisnost od klizanja se "preselila" u otpornost $R_r/s$. To je čuveno **ekvivalentno kolo rotora asinhronog motora**.
 
-Sledeća slika prikazuje upravo to kolo, onako kako ga daje zbirka. Čitaj je ovako: levo je naponski izvor $\overline{E}_{r0}$ (fazna EMS rotora pri ukočenom rotoru); kroz kolo teče struja rotora $\overline{I}_{rf}$; redno su vezani rasipna reaktansa $X_{\gamma r}$, otpornost namotaja $R_r$ i *promenljivi* otpornik $\frac{1-s}{s}R_r$ (nacrtan sa klizačem, jer mu vrednost zavisi od klizanja). Zbir dva otpornika je tačno $R_r/s$. Crvene strelice-napomene na slici kazuju dve stvari koje ćemo koristiti u rešenju: da je izlazna snaga približno $P_{out} \approx P_c = \frac{3 R_r I_{rf}^2}{s}(1-s)$ (snaga na promenljivom otporniku, videti mini-lekciju 6) i da se maksimalni (prevalni) moment $M_{pr}$ javlja kada je $X_{\gamma r} = \dfrac{R_r}{s_{pr}}$ (videti mini-lekciju 8).
+Sledeća slika prikazuje upravo to kolo, onako kako ga daje zbirka; detaljan vodič za čitanje dat je u bloku ispod slike.
 
 ![Ekvivalentno kolo rotora asinhronog motora: izvor E_r0, redna veza X_gama-r i R_r, i promenljivi otpornik (1-s)/s puta R_r](../slike/fig-41.1.png)
 
 **Slika 41.1 —** Ekvivalentno kolo rotora asinhronog motora. Ukupna otpornost kola je $R_r/s$, rastavljena na $R_r$ (stvarni gubici u bakru rotora) i $\frac{1-s}{s}R_r$ (fiktivni otpornik koji predstavlja mehaničku snagu predatu vratilu).
+
+> **Kako čitati sliku 41.1:** Na samom vrhu slike vidi se odsečen red formule
+> "$M_{out} = P_{ob}/\omega_s = \ldots = 137{,}86\ [\mathrm{Nm}]$" — to je ostatak teksta
+> sa iste stranice zbirke, ne deo šeme. Sama šema je kolo jedne rotorske faze i čita se
+> prateći struju. Levo je **crvena** dvosmerna strelica sa oznakom $\overline{E}_{r0}$ i
+> znakom $+$: naponski izvor — fazna EMS rotora pri ukočenom rotoru
+> ($E_{r0} = 190\ \mathrm{V}$). Gornjom granom teče struja rotora $\overline{I}_{rf}$
+> (mala crvena strelica; izračunato $42{,}48\ \mathrm{A}$) kroz zavojnicu $X_{\gamma r}$ —
+> rasipnu reaktansu rotora ($1\ \Omega$) — i cik-cak otpornik $R_r$ — stvarnu otpornost
+> namotaja ($0{,}2\ \Omega$; na njoj nastaju gubici u bakru rotora). Desna grana se spušta
+> na **promenljivi otpornik** (vertikalni cik-cak sa klizačem) vrednosti
+> $\frac{1-s}{s} \cdot R_r$ — fiktivni otpornik čija snaga predstavlja mehaničku snagu na
+> vratilu; pri $s = 0{,}05$ on iznosi $\frac{0{,}95}{0{,}05} \cdot 0{,}2 = 3{,}8\ \Omega$,
+> pa je ukupna otpornost kola $0{,}2 + 3{,}8 = 4\ \Omega = R_r/s$, baš kako i treba. Donji
+> provodnik zatvara kolo. Dve velike **crvene** strelice su napomene autora zbirke, a ne
+> elementi kola: gornja pokazuje na promenljivi otpornik i kazuje da je izlazna snaga
+> približno snaga na njemu, $P_{out} \approx P_c = \frac{3 R_r I_{rf}^2}{s}(1-s)$ (u našem
+> računu $20\,571{,}9\ \mathrm{W}$; mini-lekcija 6), a donja da se prevalni (maksimalni)
+> moment $M_{pr}$ javlja kada je $X_{\gamma r} = \dfrac{R_r}{s_{pr}}$ — uslov iz kog smo u
+> Koraku 2 izvukli $R_r = 0{,}2\ \Omega$ (mini-lekcija 8). Šta treba da zaključiš: cela
+> mehanika motora "stanuje" u otpornosti $R_r/s$ — njen stalni deo $R_r$ greje rotor (deo
+> $s$ snage obrtnog polja), a promenljivi deo $\frac{1-s}{s}R_r$ je koristan mehanički rad
+> (deo $1-s$); imaj pri tome na umu napomenu iz Koraka 2 da zbirka pri računanju struje
+> ovom kolu dodaje i svedenu statorsku rasipnu reaktansu
+> ($X''_{\gamma s} + X_{\gamma r} = 2\ \Omega$).
 
 *Napomena o oznaci:* ako bismo hteli da u ovom rotorskom kolu uračunamo i uticaj statorskog rasipanja, statorsku rasipnu reaktansu treba "prevesti" (svesti) na rotorsku stranu — tu svedenu vrednost obeležavamo sa $X''_{\gamma s}$ (dva prima označavaju svođenje na rotor). Tada se u imeniocu formule za struju umesto $X_{\gamma r}$ piše zbir $X''_{\gamma s} + X_{\gamma r}$. Zbirka u ovom zadatku pretpostavlja da su te dve reaktanse jednake: $X''_{\gamma s} = X_{\gamma r} = 1\ \Omega$.
 

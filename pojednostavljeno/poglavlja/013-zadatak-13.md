@@ -115,16 +115,8 @@ vektor struje — to je opšte svojstvo napona na (idealnoj) reaktansi.
 ### 4. Vektorski dijagram nadpobuđenog generatora — kako se čita
 
 Sledeća slika prikazuje vektorski dijagram sinhronog generatora u **nadpobuđenom** režimu
-(objašnjenje pojma u mini-lekciji 7), tj. baš u režimu 1 našeg zadatka. Čitaj je ovako: zelena
-horizontalna strelica je fazni napon mreže $\overline{U}_{\mathrm{sf}}$ — on je naša referenca.
-Plava strelica je struja $\overline{I}_{\mathrm{sf}}$, koja **kasni** za naponom za ugao $\varphi$
-(induktivan faktor snage). Na vrh vektora napona nadovezuje se pad napona
-$j \cdot \overline{I}_{\mathrm{sf}} \cdot X_{\mathrm{s}}$, koji je (zbog množenja sa $j$) upravan
-na struju — na slici je ta upravnost označena uglom $\pi/2$ između isprekidanog pravca struje i
-vektora pada napona. Zbir ta dva vektora je dugačka zelena strelica
-$\overline{E}_{0\mathrm{sf}}$, koja prednjači naponu mreže za **ugao opterećenja** $\delta$.
-Crvena strelica je magnetopobudna sila rotora $\overline{F}_{\mathrm{r}}$ — ona prednjači ems za
-$90^{\circ}$, jer indukovani napon uvek kasni četvrt periode za fluksom koji ga indukuje.
+(objašnjenje pojma u mini-lekciji 8), tj. baš u režimu 1 našeg zadatka; detaljan vodič za
+čitanje dat je u bloku ispod slike.
 
 ![Vektorski dijagram sinhronog generatora u nadpobuđenom režimu rada](../slike/fig-13.1.png)
 
@@ -133,6 +125,32 @@ $\overline{U}_{\mathrm{sf}}$, struja $\overline{I}_{\mathrm{sf}}$ koja kasni za 
 pad napona $j\overline{I}_{\mathrm{sf}}X_{\mathrm{s}}$ upravan na struju, ems praznog hoda
 $\overline{E}_{0\mathrm{sf}}$ pod uglom opterećenja $\delta$, i magnetopobudna sila rotora
 $\overline{F}_{\mathrm{r}}$ koja prednjači ems za $90^{\circ}$.
+
+> **Kako čitati sliku 13.1:** Referentni fazor je fazni napon mreže
+> $\overline{U}_{\mathrm{sf}}$ — **zelena** horizontalna strelica udesno (u našem zadatku
+> $220\ \mathrm{V}$); svi fazori rotiraju suprotno kazaljci na satu, pa fazor ispod
+> horizontale (pomeren u smeru kazaljke) kasni za naponom, a fazor iznad nje prednjači.
+> **Plava** strelica ukoso dole-desno je struja $\overline{I}_{\mathrm{sf}}$
+> ($100\ \mathrm{A}$): kasni za naponom za ugao $\varphi$ (luk između nje i napona; ovde
+> tačno $45^{\circ}$, jer je $\cos\varphi = 0{,}707$). Od vrha napona diže se druga
+> **zelena** strelica — pad napona $j\overline{I}_{\mathrm{sf}}X_{\mathrm{s}}$: množenje
+> sa $j$ zakreće ga za $90^{\circ}$ unapred u odnosu na struju, pa je na nju upravan — tu
+> upravnost pokazuju tačkasti (isprekidani) produžetak pravca struje i oznaka $\pi/2$ dole
+> desno. Njegova stvarna dužina je $I_{\mathrm{sf}}X_{\mathrm{s}} = 100 \cdot 0{,}401825
+> \approx 40\ \mathrm{V}$ — na crtežu je, radi čitljivosti, nacrtan srazmerno duži. Zbir
+> napona i pada napona je treća, najduža **zelena** strelica — ems praznog hoda
+> $\overline{E}_{0\mathrm{sf}}$ ($250\ \mathrm{V}$), koja prednjači naponu za ugao
+> opterećenja $\delta$ (luk između $\overline{U}_{\mathrm{sf}}$ i
+> $\overline{E}_{0\mathrm{sf}}$; izračunato $\delta \approx 6{,}5^{\circ}$, na slici
+> uvećan radi preglednosti). Ta tri fazora zatvaraju trougao napona iz kog u Koraku 3
+> računamo $X_{\mathrm{s}}$, a u Koraku 8 novu struju. **Crvena** strelica gore-levo je
+> magnetopobudna sila rotora $\overline{F}_{\mathrm{r}}$: prednjači ems za $\pi/2$
+> (označeno lukom između $\overline{F}_{\mathrm{r}}$ i $\overline{E}_{0\mathrm{sf}}$), jer
+> indukovani napon uvek kasni četvrt periode za fluksom koji ga indukuje. Šta treba da
+> zaključiš: pošto je $E_{0\mathrm{sf}} = 250\ \mathrm{V} > U_{\mathrm{sf}} = 220\ \mathrm{V}$
+> i struja kasni za naponom, mašina je nadpobuđena i daje mreži reaktivnu snagu — a istim
+> trouglom, samo sa $E_{0\mathrm{sf}}' = 125\ \mathrm{V}$ i novim uglom $\delta'$,
+> rešićemo i drugi režim.
 
 Tri vektora — $\overline{U}_{\mathrm{sf}}$, $j\overline{I}_{\mathrm{sf}}X_{\mathrm{s}}$ i
 $\overline{E}_{0\mathrm{sf}}$ — zatvaraju **trougao napona**. Ceo zadatak se rešava geometrijom

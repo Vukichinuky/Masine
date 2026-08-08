@@ -202,20 +202,13 @@ $\varphi$! Odatle komponente struje:
 
 $$I_q = I_{\mathrm{f}}\cos(\delta + \varphi), \qquad I_d = I_{\mathrm{f}}\sin(\delta + \varphi)$$
 
-Sledeća slika prikazuje ceo taj dijagram za naš režim rada. Čitajte je ovako: horizontalna osa je
-d-osa, vertikalna q-osa. Fazor $\underline{E}_{0\mathrm{f}}$ leži na q-osi. Fazor napona
-$\underline{U}_{\mathrm{f}}$ je zakrenut od q-ose za ugao $\delta$, a fazor struje
-$\underline{I}_{\mathrm{f}}$ još za $\varphi$ dalje od napona; njegove projekcije na ose su
-$\underline{I}_d$ (horizontalno) i $\underline{I}_q$ (vertikalno). Od vrha
-$\underline{U}_{\mathrm{f}}$ nadovezuju se padovi napona: prvo $R_{\mathrm{s}}\underline{I}_{\mathrm{f}}$
-(paralelan struji), zatim $\mathrm{j}X_d\underline{I}_d$ (vertikalno naviše — to je $\underline{I}_d$
-zaokrenut za $90^{\circ}$) i na kraju $\mathrm{j}X_q\underline{I}_q$ (horizontalno ulevo — to je
-$\underline{I}_q$ zaokrenut za $90^{\circ}$). Lanac se tačno zatvara na vrhu fazora
-$\underline{E}_{0\mathrm{f}}$ na q-osi.
+Sledeća slika prikazuje ceo taj dijagram za naš režim rada.
 
 ![Fazorski dijagram sinhronog hidrogeneratora sa istaknutim polovima u natpobuđenom režimu: d-osa horizontalno, q-osa vertikalno, E0f na q-osi, Uf pod uglom delta, If pod uglom delta+fi, padovi RsIf, jXdId i jXqIq zatvaraju lanac do E0f](../slike/fig-7.1.png)
 
 **Slika 7.1 —** Fazorski dijagram sinhronog hidrogeneratora u natpobuđenom režimu rada.
+
+> **Kako čitati sliku 7.1:** Fazorski dijagram u d–q koordinatama, crno-beo i principski (nije u razmeri; odsečak teksta iznad dijagrama je ostatak računa fazne struje iz originala, $I_{\mathrm{f}} = S/(\sqrt{3}\,U) = 5200/(\sqrt{3}\cdot 5{,}25) = 571{,}8\ \mathrm{A}$). Horizontalna tačkasta osa sa strelicom udesno je **d-osa**, vertikalni pravac naviše je **q-osa**; svi fazori polaze iz koordinatnog početka (dole levo), uglovi se mere od q-ose, a pozitivan smer rotacije fazora je suprotan kazaljci na satu. **Referentni pravac je q-osa**, jer duž nje leži fazor $\underline{E}_{0\mathrm{f}}$ (duga vertikalna strelica) — veličina koju tražimo, $E_{0\mathrm{f}} = 3881\ \mathrm{V}$. Struje (kratke strelice uz tačkasti pravougaonik razlaganja): $\underline{I}_d$ duž d-ose ($I_d = I_{\mathrm{f}}\sin(\delta+\varphi) = 410{,}2\ \mathrm{A}$), $\underline{I}_q$ duž q-ose ($I_q = I_{\mathrm{f}}\cos(\delta+\varphi) = 398{,}4\ \mathrm{A}$) i njihov zbir $\underline{I}_{\mathrm{f}}$ ($571{,}8\ \mathrm{A}$) po dijagonali — on sa q-osom zaklapa ugao $\delta+\varphi = 45{,}84^{\circ}$. (Napomena o oznakama: na štampanoj slici su q-komponente obeležene indeksom koji u kurzivu liči na „a" — $\underline{I}_a$, $X_a$; to su naše $\underline{I}_q$ i $X_q$.) Naponski lanac: fazor $\underline{U}_{\mathrm{f}}$ (duga kosa strelica; $3031\ \mathrm{V}$) stoji pod uglom $\delta = 8{,}97^{\circ}$ od q-ose; na njegov vrh se nadovezuje kratki $R_{\mathrm{s}}\underline{I}_{\mathrm{f}}$ (paralelan struji; svega $13{,}2\ \mathrm{V}$ — na slici preuveličan da bi se video), zatim $\mathrm{j}X_d\underline{I}_d$ vertikalno naviše ($\underline{I}_d$ zaokrenut za $90^{\circ}$; $X_d I_d = 877{,}8\ \mathrm{V}$) i na kraju $\mathrm{j}X_q\underline{I}_q$ horizontalno ulevo ($\underline{I}_q$ zaokrenut za $90^{\circ}$; $X_q I_q = 482{,}0\ \mathrm{V}$) — lanac se tačno zatvara na vrhu $\underline{E}_{0\mathrm{f}}$ na q-osi. Lučne linije kod početka označavaju uglove: $\delta$ (između q-ose i $\underline{U}_{\mathrm{f}}$) i $\varphi = 36{,}87^{\circ}$ (između $\underline{U}_{\mathrm{f}}$ i $\underline{I}_{\mathrm{f}}$). Šta treba da zaključiš: projekcija ovog lanca na q-osu daje jednačinu (1) za $E_{0\mathrm{f}}$, a projekcija na d-osu jednačinu (2) u kojoj $E_{0\mathrm{f}}$ uopšte nema — zato iz (2) prvo računamo $\delta$, pa tek onda iz (1) elektromotornu silu.
 
 **„Natpobuđen režim"** iz naslova slike znači da je pobuda tolika da je $E_{0\mathrm{f}} > U_{\mathrm{f}}$ —
 generator tada, pored aktivne, u mrežu šalje i reaktivnu (induktivnu) snagu. Naš slučaj sa

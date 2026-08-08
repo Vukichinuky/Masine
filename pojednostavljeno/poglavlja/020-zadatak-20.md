@@ -285,15 +285,8 @@ Simboli: $\underline{U}_{\mathrm{f}}$ — fazor faznog napona mreže
 $\underline{I}_d$, $\underline{I}_q$ — fazori d- i q-komponente statorske struje;
 $\underline{E}_{0\mathrm{f}}$ — fazor EMS praznog hoda (leži na q-osi).
 
-Sledeća slika prikazuje fazorski dijagram tog režima. Kako se čita: horizontalna osa je
-d-osa, vertikalna q-osa. Na q-osi leži $\underline{E}_{0\mathrm{f}}$. Fazor napona
-$\underline{U}_{\mathrm{f}}$ je zakrenut za ugao $\delta$ od q-ose, a struja
-$\underline{I}_{\mathrm{f}}$ kasni za naponom za ugao $\varphi$ (induktivan režim). Struja je
-razložena na $\underline{I}_d$ (po d-osi) i $\underline{I}_q$ (po q-osi). Od vrha
-$\underline{U}_{\mathrm{f}}$ ka q-osi ide horizontalni fazor $jX_q\underline{I}_q$ (pad
-napona na $X_q$; horizontalan je jer je $\underline{I}_q$ vertikalan, a množenje sa $j$
-zakreće za $90^{\circ}$), a zatim uz q-osu vertikalni fazor $jX_d\underline{I}_d$ — njihov
-zbir sa $\underline{U}_{\mathrm{f}}$ daje upravo $\underline{E}_{0\mathrm{f}}$.
+Sledeća slika prikazuje fazorski dijagram tog režima; detaljan vodič za čitanje dat je u
+bloku ispod slike.
 
 ![Fazorski dijagram sinhronog nadpobuđenog hidrogeneratora](../slike/fig-20.1.png)
 
@@ -301,6 +294,35 @@ zbir sa $\underline{U}_{\mathrm{f}}$ daje upravo $\underline{E}_{0\mathrm{f}}$.
 $\underline{E}_{0\mathrm{f}}$ na q-osi, napon $\underline{U}_{\mathrm{f}}$ pod uglom
 $\delta$, struja $\underline{I}_{\mathrm{f}}$ kasni za naponom za $\varphi$ i razlaže se na
 $\underline{I}_d$ i $\underline{I}_q$.
+
+> **Kako čitati sliku 20.1:** Dijagram je crno-beo, pa se fazori raspoznaju po oznakama i
+> pravcima, ne po bojama. Koordinatni sistem je vezan za rotor: vertikalna osa (nagore) je
+> q-osa, a horizontalna osa sa strelicom ulevo je d-osa; naponski fazori su u voltima,
+> strujni u amperima, s tim da su razmere napona i struja nezavisne — bitni su pravci i
+> uglovi. Referentni pravac je q-osa: na njoj leži fazor EMS praznog hoda
+> $\underline{E}_{0\mathrm{f}}$ (strelica do samog vrha; u našem režimu
+> $E_{0\mathrm{f}} = 4455\ \mathrm{V}$). Svi fazori rotiraju suprotno kazaljci na satu, pa
+> fazor pomeren od drugog u smeru kazaljke za njim kasni. Fazor napona mreže
+> $\underline{U}_{\mathrm{f}}$ ($3810{,}5\ \mathrm{V}$) ide iz koordinatnog početka ukoso
+> gore-desno, zakrenut od q-ose za ugao opterećenja $\delta$ (mali luk uz početak;
+> izračunato $\delta_1 = 6{,}815^{\circ}$, na slici nacrtan znatno veći radi čitljivosti).
+> Struja $\underline{I}_{\mathrm{f}}$ ($131{,}22\ \mathrm{A}$) je kraća strelica ispod
+> napona: kasni za $\underline{U}_{\mathrm{f}}$ za ugao $\varphi = 36{,}87^{\circ}$ (luk
+> između njih; induktivan režim, $\cos\varphi = 0{,}8$), pa joj je ugao prema q-osi
+> $\varphi + \delta = 43{,}69^{\circ}$. Njene komponente su ucrtane na osama:
+> $\underline{I}_d$ je horizontalna strelica udesno ($I_d = 90{,}63\ \mathrm{A}$) — uoči
+> da pokazuje *suprotno* od pozitivnog smera d-ose, jer d-komponenta struje nadpobuđenog
+> generatora razmagnetiše mašinu — a $\underline{I}_q$ je kratka vertikalna strelica na
+> q-osi ($I_q = I_{\mathrm{f}}\cos(\varphi+\delta) \approx 95\ \mathrm{A}$). Naponsku
+> jednačinu vidiš kao lanac od vrha $\underline{U}_{\mathrm{f}}$: horizontalna strelica
+> ulevo do q-ose je pad $jX_q\underline{I}_q$ (horizontalan jer $j$ zakreće vertikalni
+> $\underline{I}_q$ za $90^{\circ}$; dužina $X_q I_q = U_{\mathrm{f}}\sin\delta \approx
+> 452\ \mathrm{V}$), a od te tačke vertikalno naviše uz q-osu ide $jX_d\underline{I}_d$
+> ($X_d I_d = 671{,}6\ \mathrm{V}$) — lanac se završava tačno u vrhu
+> $\underline{E}_{0\mathrm{f}}$, na "visini" $U_{\mathrm{f}}\cos\delta + X_d I_d =
+> 3783{,}6 + 671{,}6 = 4455\ \mathrm{V}$. Šta treba da zaključiš: vrh EMS je iznad vrha
+> napona ($E_{0\mathrm{f}} > U_{\mathrm{f}}$ — mašina je nadpobuđena), a projekcije upravo
+> ovog crteža na q- i d-osu daju jednačine (1)–(4) kojima rešavamo tačku a).
 
 Projektovanjem dijagrama na q-osu i d-osu dobijaju se skalarne jednačine (proveri svaku na
 slici!):
@@ -417,19 +439,39 @@ $\underline{E}_{0\mathrm{f}} = 0$:
 
 $$0 = \underline{U}_{\mathrm{f}} + j\,X_d\,\underline{I}_d + j\,X_q\,\underline{I}_q$$
 
-Sledeća slika prikazuje odgovarajući fazorski dijagram. Kako se čita: raspored osa je isti
-kao na slici 20.1, ali sada fazori $\underline{U}_{\mathrm{f}}$, $jX_d\underline{I}_d$ i
-$jX_q\underline{I}_q$ zajedno moraju da se vrate u koordinatni početak (zbir im je nula —
-zato je na mestu gde bi bila EMS označeno $\underline{E}_{0\mathrm{f}} = 0$, strelice se
-poništavaju). Struja $\underline{I}_{\mathrm{f}}$ sada **prednjači** naponu za ugao
-$\varphi$ (kapacitivno) i nalazi se sa druge strane q-ose; njen ugao prema q-osi označen je
-sa $\Psi$ (grčko "psi") i sa slike se vidi $\Psi = \varphi - \delta$.
+Sledeća slika prikazuje odgovarajući fazorski dijagram; detaljan vodič za čitanje dat je u
+bloku ispod slike.
 
 ![Fazorski dijagram sinhronog hidrogeneratora sa prekinutim kolom pobude](../slike/fig-20.2.png)
 
 **Slika 20.2 —** Fazorski dijagram sinhronog hidrogeneratora sa prekinutim kolom pobude:
 $E_{0\mathrm{f}} = 0$, struja prednjači naponu (kapacitivan režim), ugao struje prema q-osi
 je $\Psi = \varphi - \delta$.
+
+> **Kako čitati sliku 20.2:** Ose i konvencije su iste kao na slici 20.1 (q-osa vertikalno
+> nagore je referentni pravac, d-osa horizontalna sa strelicom ulevo, crno-beo crtež,
+> rotacija fazora suprotno kazaljci na satu), ali je fizika drugačija: pobude nema, pa je
+> $E_{0\mathrm{f}} = 0$. Fazor napona $\underline{U}_{\mathrm{f}}$ ($3810{,}5\ \mathrm{V}$)
+> i dalje ide gore-desno, ali pod znatno većim uglom opterećenja
+> $\delta = 23{,}674^{\circ}$ (luk uz q-osu). Naponski lanac sada mora da se vrati u
+> koordinatni početak: od vrha $\underline{U}_{\mathrm{f}}$ horizontalna strelica ulevo je
+> $jX_q\underline{I}_q$ (dužina $X_q I_q = U_{\mathrm{f}}\sin\delta \approx 1530\ \mathrm{V}$),
+> a zatim vertikalna strelica nadole duž q-ose je $jX_d\underline{I}_d$
+> ($X_d I_d = U_{\mathrm{f}}\cos\delta \approx 3490\ \mathrm{V}$) — zbir sva tri fazora je
+> nula, što na slici obeležavaju dve sučeljene male strelice uz oznaku
+> $\underline{E}_{0\mathrm{f}}$ na q-osi: fazor EMS ima dužinu nula. Struja
+> $\underline{I}_{\mathrm{f}}$ ($570\ \mathrm{A}$) je sada sa leve strane q-ose i
+> **prednjači** naponu za ugao $\varphi = 79{,}388^{\circ}$ (veliki luk između
+> $\underline{I}_{\mathrm{f}}$ i $\underline{U}_{\mathrm{f}}$; kapacitivan režim,
+> $\cos\varphi = 0{,}184$); njen ugao prema q-osi označen je sa $\Psi$ (grčko "psi";
+> $\Psi = \varphi - \delta = 55{,}714^{\circ}$, luk uz samu struju). Komponente:
+> $\underline{I}_d$ je horizontalna strelica ulevo ($I_d = 470{,}96\ \mathrm{A}$) — sada u
+> pozitivnom smeru d-ose, jer je to struja magnećenja koju mašina uzima iz mreže — a
+> $\underline{I}_q$ je kratka vertikalna strelica na q-osi ($I_q = 321{,}1\ \mathrm{A}$).
+> Šta treba da zaključiš: bez pobude sav fluks mora da napravi statorska struja, pa
+> d-komponenta postaje ogromna i ukupna struja ($570\ \mathrm{A}$) premašuje nazivnu
+> ($437{,}38\ \mathrm{A}$) — dijagram u jednoj slici objašnjava i kapacitivan faktor snage
+> i strujno preopterećenje iz tačke c).
 
 Projektovanjem na ose (isti postupak kao u koraku 4, samo bez člana $E_{0\mathrm{f}}$):
 
@@ -508,18 +550,37 @@ $\delta = 0$ (vrednost $3U_{\mathrm{f}}^2/X_d$) i da monotono raste do $\delta =
 aktivna snaga u trajnom radu.
 
 Sledeća slika prikazuje obe karakteristike, nacrtane po formulama (11) i (12) sa podacima
-naše mašine, za ugao $\delta$ od $-\pi$ do $\pi$. Kako se čita: gornji dijagram a) je
-aktivna snaga $P(\delta)$ u MW — sinusoida **dvostruke učestanosti** (period $\pi$, jer je
-argument $2\delta$), sa maksimumom $P_{\max} \approx 1{,}63\ \mathrm{MW}$ na
-$\delta = \pi/4 \approx 0{,}785\ \mathrm{rad}$; donji dijagram b) je reaktivna snaga
-$Q(\delta)$ u MVAr koju mašina uzima iz mreže — uvek pozitivna, talasa se između
-$3U_{\mathrm{f}}^2/X_d = 5{,}88\ \mathrm{MVAr}$ (na $\delta = 0$) i
-$3U_{\mathrm{f}}^2/X_q = 9{,}14\ \mathrm{MVAr}$ (na $\delta = \pm\pi/2$).
+naše mašine, za ugao $\delta$ od $-\pi$ do $\pi$; detaljno čitanje je u bloku ispod slike.
 
 ![Ugaone karakteristike aktivne i reaktivne snage hidrogeneratora sa prekinutim kolom pobude](../slike/fig-20.3.png)
 
 **Slika 20.3 —** Ugaona karakteristika aktivne (a) i reaktivne snage (b) sinhronog
 hidrogeneratora sa prekinutim kolom pobude.
+
+> **Kako čitati sliku 20.3:** Slika su dva računarska (MATLAB) dijagrama na sivoj podlozi,
+> sa isprekidanom koordinatnom mrežom; na oba je horizontalna osa ugao opterećenja
+> $\delta$ u radijanima ("delta [rad]", osa iscrtana od $-4$ do $4$, a kriva pokriva
+> $-\pi \le \delta \le \pi$) i na oba je kriva plava. Gornji dijagram, ispod koga stoji
+> oznaka a), prikazuje aktivnu snagu: vertikalna osa je $P\ \mathrm{[MW]}$ uz množilac
+> $\times 10^6$, od $-2$ do $2$. Plava kriva je reluktantna karakteristika $P(\delta)$ iz
+> formule (11): sinusoida **dvostruke učestanosti** (period $\pi$, jer je argument
+> $2\delta$), sa nulama u $\delta = 0$, $\pm\pi/2$ i $\pm\pi$, maksimumima
+> $P_{\max} = 1{,}63\ \mathrm{MW}$ u $\delta = \pi/4 \approx 0{,}785\ \mathrm{rad}$ (i
+> ponovo u $\delta = -3\pi/4$) i minimumima od $-1{,}63\ \mathrm{MW}$ u $\delta = -\pi/4$
+> i $3\pi/4$; pozitivne vrednosti znače generatorski, negativne motorski rad. Donji
+> dijagram, sa oznakom б), prikazuje reaktivnu snagu: vertikalna osa je
+> $Q\ \mathrm{[MVAr]}$ uz množilac $\times 10^6$, od $5{,}5$ do $9{,}5$. Plava kriva
+> $Q(\delta)$ iz formule (12) je **svuda pozitivna** (tu snagu mašina uvek uzima iz mreže,
+> za sopstveno magnećenje) i takođe ima period $\pi$: minimumi
+> $3U_{\mathrm{f}}^2/X_d = 5{,}88\ \mathrm{MVAr}$ su u $\delta = 0$ i $\pm\pi$, a
+> maksimumi $3U_{\mathrm{f}}^2/X_q = 9{,}14\ \mathrm{MVAr}$ u $\delta = \pm\pi/2$. Radna
+> tačka iz tačke c) — $\delta = 23{,}674^{\circ} \approx 0{,}41\ \mathrm{rad}$,
+> $P = 1{,}2\ \mathrm{MW}$, $Q = 6{,}4\ \mathrm{MVAr}$ — nije posebno obeležena, ali leži
+> uredno na obe krive. Šta treba da zaključiš: stabilan generatorski rad postoji samo na
+> uzlaznom delu gornje krive, $0 < \delta < \pi/4$, a donja kriva pokazuje da mašina bez
+> pobude pri *svakom* uglu vuče iz mreže bar $5{,}88\ \mathrm{MVAr}$ — više od cele
+> nazivne prividne snage ($5\ \mathrm{MVA}$) — pa trajni rad bez pobude za ovu mašinu nije
+> moguć.
 
 Komentar (ovo je teorija koju original izlaže uz sliku, prepričana): kada je kolo pobude
 prekinuto, i proizvodnja aktivne i potrošnja reaktivne snage zavise **samo od ugla

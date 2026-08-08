@@ -313,11 +313,13 @@ $$M_{\mathrm{p}} = M_{\mathrm{pr}} = \frac{3}{\dfrac{2\pi}{60}\cdot 600}\cdot 22
 
 **Šta smo dobili:** polazni moment je skočio sa $147$ na $320{,}74\ \mathrm{Nm}$ — i to je istovremeno **prevalni moment**, najveći koji ova mašina uopšte može da razvije. Više od ovoga se nikakvim otporom ne može dobiti.
 
-Sledeća slika prikazuje momentne karakteristike $M(n)$ — zavisnost razvijenog momenta od brzine obrtanja — za oba slučaja iz zadatka: crvena kriva je prirodna karakteristika (bez dodatnog otpora, $R_{rd}=0$), a ružičasta kriva je karakteristika sa izračunatim dodatnim otporom $R_{rd} = 0{,}0921\ \mathrm{\Omega}$. Čitaj je ovako: na horizontalnoj osi je brzina od $0$ do sinhrone ($600\ \mathrm{min^{-1}}$); vrednost krive pri $n = 0$ je polazni moment. Vidi se da obe krive dostižu **istu** maksimalnu visinu (oko $321\ \mathrm{Nm}$ — prevalni moment ne zavisi od rotorskog otpora!), ali crvena svoj maksimum ima tek oko $460\ \mathrm{min^{-1}}$, dok ga ružičasta ima tačno pri $n = 0$ — baš kako smo projektovali.
+Sledeća slika prikazuje momentne karakteristike $M(n)$ — zavisnost razvijenog momenta od brzine obrtanja — za oba slučaja iz zadatka: bez dodatnog otpora u rotoru i sa njim.
 
 ![Momentne karakteristike asinhronog motora sa i bez dodatnog otpora u kolu rotora](../slike/fig-42.1.png)
 
 **Slika 42.1 —** Karakteristike momenta asinhronog motora sa i bez dodatnog otpora u kolu rotora $R_{rd}$: bez otpora (crveno) polazni moment je $147\ \mathrm{Nm}$, a sa otporom $R_{rd}=0{,}0921\ \mathrm{\Omega}$ (ružičasto) polazni moment je jednak prevalnom, $320{,}74\ \mathrm{Nm}$.
+
+> **Kako čitati sliku 42.1:** Na horizontalnoj osi je brzina obrtanja rotora $n$ u $\mathrm{min^{-1}}$, od $0$ (polazak, $s=1$) do sinhrone brzine $n_s = 600\ \mathrm{min^{-1}}$ ($s=0$); na vertikalnoj osi je razvijeni moment $M$ u $\mathrm{Nm}$, skala do $350\ \mathrm{Nm}$ (naslov na slici: „Razvijeni moment"). Crvena kriva (oznaka $R_{rd}=0$) je prirodna karakteristika sa kratkospojenim rotorom: pri $n=0$ kreće od polaznog momenta $147\ \mathrm{Nm}$ (Korak 5), raste do vrha $M_{\mathrm{pr}} = 320{,}74\ \mathrm{Nm}$ na oko $460\ \mathrm{min^{-1}}$ (prevalno klizanje $s_{\mathrm{pr}} = 0{,}227$, v. Proveru smisla 2), pa strmo pada na nulu tačno u $n = n_s = 600\ \mathrm{min^{-1}}$ (pri $s=0$ momenta nema). Ružičasta kriva (oznaka $R_{rd} = 0{,}0921\ \mathrm{\Omega}$) je karakteristika sa dodatnim otporom: vrh joj je pomeren tačno u $n = 0$, pa počinje od $M_{\mathrm{p}} = M_{\mathrm{pr}} = 320{,}74\ \mathrm{Nm}$ i monotono opada ka nuli u sinhronizmu. Obe krive dostižu **istu** maksimalnu visinu (oko $321\ \mathrm{Nm}$ — prevalni moment ne zavisi od rotorskog otpora!), a seku se približno na $300\ \mathrm{min^{-1}}$ (pri oko $250\ \mathrm{Nm}$): u drugoj polovini zaleta prirodna karakteristika daje veći moment. Šta treba da zaključiš: dodatni rotorski otpor ne menja visinu prevalnog momenta, već samo „prevlači" njegov položaj po brzini — ovde tačno u tačku polaska, pa motor kreće najvećim momentom koji uopšte može da razvije.
 
 ### Korak 10 (c): Polazna struja statora sa dodatnim otporom
 
@@ -331,11 +333,13 @@ $$I_{\mathrm{ps}} = \frac{220}{\sqrt{(0{,}38 + 0{,}73 + 2{,}492)^2 + (1{,}36 + 1
 
 **Šta smo dobili:** struja je pala sa $65$ na $45{,}7\ \mathrm{A}$ — smanjena je $65/45{,}7 \approx 1{,}4$ puta, dok je moment istovremeno povećan $320{,}74/147{,}05 \approx 2{,}2$ puta. To je suština kliznokolutnog motora: *manja struja, a veći moment* — kombinacija koju direktan polazak kaveznog motora ne može da pruži.
 
-Sledeća slika prikazuje zavisnost efektivne vrednosti statorske struje od brzine obrtanja za oba slučaja. Čitaj je kao i prethodnu: vrednost pri $n=0$ je polazna struja ($65\ \mathrm{A}$ za crvenu, $45{,}7\ \mathrm{A}$ za ružičastu krivu); obe struje opadaju ka nuli kako se brzina bliži sinhronoj (struja magnetisanja je u ovom modelu zanemarena, pa pri $s=0$ struje nema). Uoči da je ružičasta kriva **svuda ispod** crvene — dodatni otpor smanjuje struju tokom čitavog zaleta, ne samo u startu.
+Sledeća slika prikazuje zavisnost efektivne vrednosti statorske struje od brzine obrtanja za oba slučaja — bez dodatnog otpora i sa njim.
 
 ![Zavisnost statorske struje od brzine obrtanja za razne dodatne otpore](../slike/fig-42.2.png)
 
 **Slika 42.2 —** Zavisnost efektivne vrednosti struje motora (statora) od brzine obrtanja za razne dodatne spoljašnje otpore po fazi rotora: $R_{rd}=0$ (crveno) i $R_{rd}=0{,}0921\ \mathrm{\Omega}$ (ružičasto).
+
+> **Kako čitati sliku 42.2:** Na horizontalnoj osi je brzina $n$ u $\mathrm{min^{-1}}$ ($0$–$600$), na vertikalnoj efektivna vrednost statorske struje $I_s$ u $\mathrm{A}$, skala do $70\ \mathrm{A}$ (naslov na slici: „Statorska struja"). Crvena kriva ($R_{rd}=0$) počinje pri $n=0$ od polazne struje $65\ \mathrm{A}$ (Korak 3), dugo ostaje visoka (na $300\ \mathrm{min^{-1}}$ još uvek oko $60\ \mathrm{A}$) i tek blizu sinhrone brzine naglo pada. Ružičasta kriva ($R_{rd}=0{,}0921\ \mathrm{\Omega}$) počinje od $45{,}7\ \mathrm{A}$ (Korak 10) i opada gotovo ravnomerno; **svuda je ispod** crvene — dodatni otpor smanjuje struju tokom čitavog zaleta, ne samo u startu. Obe krive završavaju u nuli pri $n = 600\ \mathrm{min^{-1}}$, jer je struja magnetisanja u ovom modelu zanemarena (realan motor bi i pri $s=0$ vukao malu struju praznog hoda). Šta treba da zaključiš: sa dodatnim rotorskim otporom motor u svakoj tački zaleta vuče oko $1{,}4$ puta manju struju, a pritom (Slika 42.1) razvija veći moment — obe koristi istovremeno.
 
 U praksi se tokom zaleta dodatni otpor smanjuje u stepenima (preklopnikom) ili kontinualno, tako da se sve vreme održava dovoljan moment uz što manju struju; na kraju zaleta rotor se kratko spoji i motor radi na prirodnoj karakteristici.
 
@@ -347,11 +351,13 @@ $$I_{\mathrm{pr}} = \frac{q_s}{q_r}\, m_e \cdot I_{\mathrm{ps}} = \frac{3}{3}\cd
 
 **Šta smo dobili:** rotorska polazna struja je pala sa $337{,}7$ na $237{,}6\ \mathrm{A}$ — isti odnos smanjenja od $1{,}4$ puta kao kod statora (logično, jer su vezane fiksnim koeficijentom $m_e$).
 
-Sledeća slika prikazuje isti tip krivih kao Slika 42.2, ali za **rotorsku** struju: zavisnost njene efektivne vrednosti od brzine obrtanja, bez dodatnog otpora (crveno, počinje od $337{,}7\ \mathrm{A}$) i sa dodatnim otporom izračunatim za maksimalni polazni moment (ružičasto, počinje od $237{,}6\ \mathrm{A}$).
+Sledeća slika prikazuje isti tip krivih kao Slika 42.2, ali za **rotorsku** struju — bez dodatnog otpora i sa dodatnim otporom izračunatim za maksimalni polazni moment.
 
 ![Zavisnost rotorske struje od brzine obrtanja za različite dodatne otpore](../slike/fig-42.3.png)
 
 **Slika 42.3 —** Zavisnost efektivne vrednosti struje rotora od brzine obrtanja za različite dodatne spoljašnje otpore po fazi rotora.
+
+> **Kako čitati sliku 42.3:** Ose su iste kao na Slici 42.2 (brzina $n$ u $\mathrm{min^{-1}}$, $0$–$600$), samo je na vertikalnoj osi sada **stvarna rotorska** struja $I_r$ u $\mathrm{A}$, skala do $350\ \mathrm{A}$ (naslov na slici: „Rotorska struja") — pet puta veća od statorske skale, jer je $I_r = m_e I_s = 5{,}2\, I_s$. Crvena kriva ($R_{rd}=0$) počinje pri $n=0$ od polazne rotorske struje $337{,}7\ \mathrm{A}$ (Korak 4), ružičasta ($R_{rd}=0{,}0921\ \mathrm{\Omega}$) od $237{,}6\ \mathrm{A}$ (Korak 11); obe opadaju ka nuli u sinhronizmu i potpuno su istog oblika kao statorske krive, pošto su sa njima vezane konstantnim množiocem $m_e = 5{,}2$. Šta treba da zaključiš: kroz rotorski namotaj, klizne kolutove, četkice i sam dodatni otpornik teku stotine ampera — zato se ta oprema dimenzioniše masivno, a dodatni otpor je dragocen i ovde jer polaznu rotorsku struju obara za oko $100\ \mathrm{A}$.
 
 ### Korak 12 (c): Faktor snage pri polasku sa dodatnim otporom; uticaj na stepen iskorišćenja
 
@@ -363,11 +369,13 @@ $$\cos\varphi_{\mathrm{p}} = \frac{R_s + R'_r + R'_d}{\sqrt{\left(R_s + R'_r + R
 
 **Šta smo dobili:** faktor snage pri polasku skočio je sa $0{,}328$ na $0{,}75$ — dodavanjem otpora kolo je postalo pretežno "otporničko" umesto pretežno "reaktivno", pa motor pri zaletu uzima znatno manje reaktivne snage iz mreže.
 
-Dodatni otpor popravlja i **stepen iskorišćenja tokom zaleta**. Sledeća slika prikazuje zavisnost stepena iskorišćenja $\eta$ od brzine obrtanja za oba slučaja. Čitaj je ovako: obe krive rastu od $0$ (pri polasku sva snaga ide u gubitke) ka $100\ \%$ pri sinhronoj brzini (u ovom idealizovanom modelu, gde su jedini gubici u namotajima); ružičasta kriva (sa dodatnim otporom) je tokom čitavog zaleta **iznad** crvene. Razlog: sa dodatnim otporom struje statora i rotora su manje, pa su manji i Džulovi gubici $\sim I^2 R$ u samim namotajima mašine. (Napomena: gubici u spoljašnjem otporniku ovde se ne računaju u gubitke mašine — otpornik je van nje.)
+Dodatni otpor popravlja i **stepen iskorišćenja tokom zaleta**. Sledeća slika prikazuje zavisnost stepena iskorišćenja $\eta$ od brzine obrtanja za oba slučaja.
 
 ![Zavisnost stepena iskorišćenja od brzine obrtanja za različite dodatne otpore](../slike/fig-42.4.png)
 
 **Slika 42.4 —** Zavisnost stepena iskorišćenja od brzine obrtanja za različite dodatne spoljašnje otpore po fazi rotora: sa uključenim otporom (ružičasto) iskorišćenje je tokom zaleta bolje nego bez njega (crveno).
+
+> **Kako čitati sliku 42.4:** Na horizontalnoj osi je brzina $n$ u $\mathrm{min^{-1}}$ ($0$–$600$), na vertikalnoj stepen iskorišćenja $\eta$ u procentima ($0$–$100\ \%$; naslov na slici: „Koeficijent iskorišćenja"). Obe krive rastu od $\eta = 0$ pri $n=0$ (rotor stoji, mehaničkog rada nema — sva primljena snaga odlazi u gubitke) do $100\ \%$ pri sinhronoj brzini: u ovom idealizovanom modelu jedini gubici su Džulovi gubici u namotajima, a njih pri $s=0$ nema jer nema ni struje. Ružičasta kriva ($R_{rd}=0{,}0921\ \mathrm{\Omega}$) je gotovo prava linija i tokom čitavog zaleta leži **iznad** crvene ($R_{rd}=0$), koja se ugiba nadole; razlika je najveća oko sredine zaleta (na $300\ \mathrm{min^{-1}}$ približno $50\ \%$ prema $40\ \%$), a nestaje na krajevima. Razlog: sa dodatnim otporom struje statora i rotora su manje, pa su manji i gubici $\sim I^2 R$ u samim namotajima mašine; gubici u spoljašnjem otporniku ne računaju se u gubitke mašine, jer je otpornik van nje (i lakše se hladi). Šta treba da zaključiš: dodatni rotorski otpor čini zalet i „čistijim" — mašina se manje greje iznutra, jer se deo neizbežne toplote rotorskog kola premesti u spoljašnji otpornik.
 
 ## Česte greške i zamke
 

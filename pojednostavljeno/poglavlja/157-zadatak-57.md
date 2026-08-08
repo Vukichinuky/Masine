@@ -309,10 +309,7 @@ vezan i koje struje uopšte mogu da teku.
 Kad pregori osigurač u jednoj fazi (na slici dole: u provodniku ka priključku $W$), motor ostaje
 vezan na mrežu samo preko priključaka $U$ i $V$, tj. napaja se **linijskim naponom**
 $U_{UV} = 380\ \mathrm{V}$, a kroz njega teče jedna jedina konturna struja: kroz fazni namotaj $U$,
-kroz zvezdište, pa nazad kroz namotaj $V$. Sledeća slika prikazuje tu situaciju: tri mrežna
-provodnika $L_1, L_2, L_3$ sa osiguračima, od kojih je levi (ka namotaju $W$) precrtan —
-pregoreo; ispod su tri statorska namotaja $U, V, W$ spojena u zvezdište, i rotor (krug sa
-strelicom) koji se i dalje obrće.
+kroz zvezdište, pa nazad kroz namotaj $V$. Sledeća slika prikazuje tu novu topologiju kola.
 
 ![Šema trofaznog motora kome je pregoreo osigurač jedne faze](../slike/fig-57.1.png)
 
@@ -320,10 +317,24 @@ strelicom) koji se i dalje obrće.
 pregoreo (precrtan), pa je $i_3 = 0$, a struja se zatvara kroz namotaje $U$ i $V$ redno
 ($i_1 = -i_2$).
 
-> **Napomena o originalu:** na originalnoj slici su sve tri struje označene sa „$=0$"
-> ($i_3{=}0,\ i_2{=}0,\ i_1{=}0$), što je omaška u crtežu: nula je samo struja prekinute faze,
-> $i_3 = 0$, dok su preostale dve struje različite od nule i u protivfazi, $i_1 = -i_2$ — što
-> uostalom kaže i sam tekst rešenja u zbirci.
+> **Kako čitati sliku 57.1:** Ovo je šema veze (nema osa — čitaju se elementi i putanja struje).
+> Tri vodoravne linije pri vrhu su tri fazna provodnika mreže $L_1$, $L_2$, $L_3$ (između njih je
+> linijski napon $380\ \mathrm{V}$, $50\ \mathrm{Hz}$); iz njih se spuštaju tri vertikalna voda,
+> svaki preko svog osigurača (uspravni pravougaonik). Levi osigurač, u vodu koji sa $L_3$ ide ka
+> priključku $W$, precrtan je znakom „X" — on je pregoreo, taj vod je prekinut i kroz njega je
+> struja zaista nula ($i_3 = 0$). Preostala dva voda su zdrava: desni sa $L_1$ vodi na stezaljku
+> $U$, srednji sa $L_2$ na stezaljku $V$ (mali kružići su priključne stezaljke motora). Ispod
+> stezaljki su tri statorska namotaja (simboli kalemova) koji se sastaju u zajedničkoj tački —
+> zvezdištu (puna tačka u sredini); zvezdište nije izvedeno napolje, pa četvrtog provodnika nema.
+> Krug sa zakrivljenom strelicom u dnu je rotor, koji se po inerciji i dalje obrće u naznačenom
+> smeru. Put struje prati se ovako: iz $L_1$ kroz osigurač u stezaljku $U$, kroz namotaj $U$ do
+> zvezdišta, pa kroz namotaj $V$ nazad na stezaljku $V$ i u $L_2$ — jedna jedina konturna struja,
+> dakle $i_1 = -i_2$, dok namotaj $W$ ostaje bez struje. Pažnja na oznake: na originalnom crtežu
+> uz sve tri strelice piše „$=0$" ($i_1{=}0$, $i_2{=}0$, $i_3{=}0$) — to je omaška crtača; nula
+> je samo struja prekinute faze $i_3$, a $i_1$ i $i_2$ su različite od nule i u protivfazi, što
+> uostalom kaže i sam tekst rešenja u zbirci. Šta treba da zaključiš: posle ispada faze motor je
+> efektivno jednofazni potrošač između stezaljki $U$ i $V$ — na rednu vezu dva namotaja deluje
+> linijski napon $380\ \mathrm{V}$, i upravo tu topologiju modeluje redna šema na slici 57.3.
 
 Režim je **nesimetričan**, pa struje faznih namotaja rastavljamo na simetrične komponente
 (mini-lekcija 4):
@@ -377,13 +388,7 @@ stvarne struje $\underline{I}_1$; njihov zbir vraća $\underline{I}_1$ (provera:
 $\tfrac{1-a}{3} + \tfrac{1-a^2}{3} = \tfrac{2-a-a^2}{3} = \tfrac{2+1}{3} = 1$, jer je
 $a + a^2 = -1$).
 
-Sledeća slika prikazuje upravo to. Čitajte je ovako: horizontalno udesno je fazor stvarne struje
-prve faze $\underline{I}_A$, horizontalno ulevo njemu suprotan $\underline{I}_B = -\underline{I}_A$.
-Puni kraći fazori su komponente: $\underline{I}_{Ad}$ ($30^\circ$ ispod $\underline{I}_A$) i
-$\underline{I}_{Ai}$ ($30^\circ$ iznad); isprekidane linije pokazuju kako se sabiranjem
-komponenti (pravilo paralelograma) rekonstruišu stvarne struje. Vertikalni fazori
-$\underline{I}_{Cd}$ (naviše) i $\underline{I}_{Ci}$ (naniže) su komponente treće faze — one se
-međusobno poništavaju, pa je $\underline{I}_C = 0$, baš kako i mora biti u prekinutoj fazi.
+Sledeća slika prikazuje upravo to rastavljanje, na fazorskom dijagramu struja.
 
 ![Fazorski dijagram struja i njihovih simetričnih komponenti](../slike/fig-57.2.png)
 
@@ -391,9 +396,28 @@ međusobno poništavaju, pa je $\underline{I}_C = 0$, baš kako i mora biti u pr
 stvarne struje $\underline{I}_A = -\underline{I}_B$ i njihove direktne ($d$) i inverzne ($i$)
 komponente; komponente prekinute faze $C$ se poništavaju.
 
-Napomena o oznakama: na slici su faze obeležene sa $A, B, C$ — to su iste faze koje u tekstu
-zovemo $1, 2, 3$ (odnosno priključci $U, V, W$): $A \equiv 1 \equiv U$, $B \equiv 2 \equiv V$,
-$C \equiv 3 \equiv W$.
+> **Kako čitati sliku 57.2:** Fazorski dijagram struja: dužina svakog fazora srazmerna je
+> efektivnoj vrednosti struje, a uglovi između fazora su fazni pomaci. **Referentni fazor** je
+> stvarna struja prve faze $\underline{I}_A$, nacrtana horizontalno udesno; njoj tačno suprotan
+> (horizontalno ulevo) je $\underline{I}_B = -\underline{I}_A$ — ista konturna struja gledana sa
+> suprotnim referentnim smerom. Podrazumeva se standardna konvencija da svi fazori rotiraju u
+> pozitivnom (protivkazaljkinom) smeru, pa fazor nacrtan „iznad" referentnog **prednjači**, a
+> onaj „ispod" **kasni**. Puni kraći fazori su simetrične komponente, svaki dužine
+> $I_A/\sqrt{3} \approx 0{,}577\,I_A$ (izvedeno u ovom koraku): $\underline{I}_{Ad}$ leži
+> $30^\circ$ ispod $\underline{I}_A$ (direktna komponenta kasni $30^\circ$), a
+> $\underline{I}_{Ai}$ leži $30^\circ$ iznad (inverzna prednjači $30^\circ$); simetrično tome,
+> $\underline{I}_{Bd}$ i $\underline{I}_{Bi}$ stoje po $30^\circ$ oko $\underline{I}_B$.
+> Isprekidane linije su pomoćne stranice paralelograma: sabiranjem
+> $\underline{I}_{Ad} + \underline{I}_{Ai}$ po pravilu paralelograma rekonstruiše se tačno
+> $\underline{I}_A$ (i isto tako $\underline{I}_B$ iz svojih komponenti) — provera:
+> $2\cdot\frac{I_A}{\sqrt{3}}\cos 30^\circ = I_A$. Vertikalni par fazora pripada prekinutoj fazi
+> $C$: $\underline{I}_{Cd}$ gleda pravo naviše, $\underline{I}_{Ci}$ pravo naniže; jednaki su po
+> dužini i suprotni, pa je njihov zbir $\underline{I}_C = 0$ — baš kako u prekinutom provodniku
+> mora biti. Oznake faza: $A, B, C$ na slici su faze koje tekst zove $1, 2, 3$ (odnosno
+> priključci $U, V, W$): $A \equiv 1 \equiv U$, $B \equiv 2 \equiv V$, $C \equiv 3 \equiv W$.
+> Šta treba da zaključiš: nesimetričan skup struja $(\underline{I}_A, -\underline{I}_A, 0)$
+> tačno se rastavlja na dva simetrična sistema jednakih modula $I_A/\sqrt{3}$ — direktni i
+> inverzni — što nam dozvoljava da motor dalje računamo kao zbir dva „obična" simetrična motora.
 
 **Šta smo dobili:** nesimetrični režim sa strujama $(\underline{I}_1, -\underline{I}_1, 0)$
 ekvivalentan je zbiru dva simetrična sistema, svaki sa strujama po modulu $I_1/\sqrt{3}$ — jedan
@@ -450,19 +474,36 @@ deo, impedansa $\underline{Z}_d$) i jedne sa klizanjem $2-s$ (kočioni, inverzni
 $\underline{Z}_i$). Kroz obe teče ista struja $\underline{I}_1$, a napon na krajevima je linijski
 napon $U_{UV}$.
 
-Sledeća slika prikazuje tu rednu šemu. Čitajte je odozgo nadole: gornja polovina je „direktna"
-šema ($R_s$, $X_{\gamma s}$, pa rotorska grana $X'_{\gamma r}$ i $R'_r/s$), donja polovina je
-„inverzna" ($R'_r/(2-s)$ umesto $R'_r/s$); isprekidano nacrtane poprečne grane podsećaju da je
-magnećenje zanemareno ($X_\mu \to \infty$, struja magnećenja $\underline{I}_{\mu} \to 0$), zbog
-čega je struja rotorskih grana praktično jednaka statorskoj
-($\underline{I}'_{rd} \approx \underline{I}'_{ri} \approx \underline{I}_s$). Na levoj strani je
-označen ukupni napon $\underline{U}_{UV}$ i ista ulazna/izlazna struja $\underline{I}_1$.
+Sledeća slika prikazuje tu rednu šemu.
 
 ![Redna ekvivalentna šema za jednofazni režim](../slike/fig-57.3.png)
 
 **Slika 57.3 —** Ekvivalentna šema trofaznog motora kad radi u jednofaznom režimu: redna veza
 direktne šeme (klizanje $s$) i inverzne šeme (klizanje $2-s$), napajana linijskim naponom
 $U_{UV}$.
+
+> **Kako čitati sliku 57.3:** Šema kola — prati struju od ulaza do izlaza. Crvenom bojom su
+> nacrtane strelice struja i napona, crnom elementi kola. Na levoj strani je dugačka crvena
+> dvostrana strelica: ukupni napon $\underline{U}_{UV}$ (linijskih $380\ \mathrm{V}$), sa znakom
+> „+" na gornjem kraju — to je sve što je od mreže ostalo. Struja $\underline{I}_1$ ulazi gore
+> levo (crvena strelica udesno) i prolazi redom kroz: otpornik $R_s$ ($0{,}2\ \mathrm{\Omega}$ —
+> stator faze $U$), rasipnu reaktansu $X_{\gamma s}$ ($0{,}5\ \mathrm{\Omega}$), pa kroz rotorsku
+> granu direktnog dela — reaktansu $X'_{\gamma r}$ ($0{,}5\ \mathrm{\Omega}$) i otpornik sa kosom
+> strelicom $R'_r/s$ (kosa strelica označava da vrednost zavisi od klizanja; pri
+> $s = s_{\mathrm{n}} = 0{,}03$ iznosi $6{,}67\ \mathrm{\Omega}$). To je gornja polovina —
+> „direktna" šema, običan motor pri klizanju $s$. Ista struja zatim nastavlja kroz donju polovinu
+> — „inverznu" šemu, identičnu po strukturi, samo sa otpornikom $R'_r/(2-s)$ (pri $s_{\mathrm{n}}$:
+> svega $0{,}10\ \mathrm{\Omega}$) — pa kroz donje $X_{\gamma s}$ i $R_s$ (stator faze $V$) izlazi
+> dole levo (crvena strelica $\underline{I}_1$ ulevo). Isprekidano nacrtane poprečne grane sa
+> oznakama $X_\mu \to \infty$ i crvenim strelicama $\underline{I}_{\mu d} \to 0$,
+> $\underline{I}_{\mu i} \to 0$ podsećaju da je magnećenje zanemareno: kroz njih ne teče ništa,
+> pa je struja rotorskih grana jednaka statorskoj — otuda natpisi
+> $\underline{I}'_{rd} \approx \underline{I}_s$ i $\underline{I}'_{ri} \approx \underline{I}_s$
+> uz gornje grane. (Iznad same šeme na ovom isečku iz zbirke vidi se i deo formule — upravo izraz
+> za $I_{s1} = 51{,}1\ \mathrm{A}$ koji iz ove šeme izvodimo u koraku 8.) Šta treba da zaključiš:
+> motor bez jedne faze je, gledano sa stezaljki $U$–$V$, obično redno kolo ukupne impedanse
+> $\underline{Z}_d + \underline{Z}_i$ (pri $s_{\mathrm{n}}$: $7{,}17 + \mathrm{j}2\ \mathrm{\Omega}$,
+> modula $7{,}44\ \mathrm{\Omega}$), pa je sva dalja računica prosto Omov zakon.
 
 Struja motora u jednofaznom režimu je dakle:
 
@@ -604,44 +645,61 @@ ako je opterećen sa oko $50 \div 60\ \%$ nazivnog momenta.
 karakteristike momenta i struje u funkciji brzine, koje zbirka prilaže i koje treba znati
 pročitati.
 
-Sledeća slika prikazuje momentne karakteristike: ljubičasta kriva je moment pri trofaznom
-napajanju, crvena pri jednofaznom (ispad faze); vodoravna siva linija je moment tereta $M_T$
-(nazivni, $\approx 191\ \mathrm{Nm}$), a tačka „1" na njoj je nazivna radna tačka
-($n_{\mathrm{n}} = 970\ \mathrm{min^{-1}}$). Čitajte je ovako: radna tačka je uvek presek krive motora i
-linije tereta; posle ispada faze motor „preskoči" sa ljubičaste na crvenu krivu (vertikalno
-naniže, jer se brzina trenutno ne menja), pa onda klizi po crvenoj krivoj ulevo do novog preseka
-sa $M_T$ — na oko $965\ \mathrm{min^{-1}}$.
+Sledeća slika prikazuje momentne karakteristike za oba režima napajanja, sa ucrtanom linijom
+tereta i nazivnom radnom tačkom.
 
 ![Momentne karakteristike pri trofaznom i jednofaznom napajanju](../slike/fig-57.4.png)
 
 **Slika 57.4 —** Razvijeni moment trofaznog asinhronog motora u zavisnosti od brzine obrtanja,
 pri trofaznom napajanju i pri ispadu jedne faze.
 
-Na slici uočite tri stvari. Prvo, jednofazna kriva kreće iz **nule pri $n = 0$**: pri zakočenom
-rotoru je $s = 1$, pa je $2 - s = 1$ — direktno i inverzno polje su tada ravnopravni
-($Z_d = Z_i$) i njihovi momenti se tačno poništavaju. Praktična posledica: motor kome je ispala
-faza **ne može sam da se zaleti** (a zaustavljen i dalje vuče veliku struju — vidi sledeću
-sliku). Drugo, jednofazna kriva je svuda niža od trofazne: maksimum joj je oko
-$255\ \mathrm{Nm}$ (prema oko $565\ \mathrm{Nm}$ trofazno), pa je rezerva momenta drastično
-manja. Treće, u okolini radne brzine obe krive su strme i približno linearne — to opravdava
-linearizaciju iz koraka 11.
+> **Kako čitati sliku 57.4:** Dijagram momentnih karakteristika. Horizontalna osa: brzina
+> obrtanja $n$ u $\mathrm{min^{-1}}$, od $0$ do $1000$ (krajnja desna tačka je sinhrona brzina
+> $n_s = 1000\ \mathrm{min^{-1}}$); vertikalna osa: razvijeni moment $M$ u $\mathrm{Nm}$, od $0$
+> do $600$. **Ljubičasta kriva** („Trofazno napajanje") je moment pri zdravom napajanju: kreće od
+> polaznog momenta $\approx 240\ \mathrm{Nm}$ pri $n = 0$, raste do prevalnog maksimuma
+> $\approx 565\ \mathrm{Nm}$ na oko $790\ \mathrm{min^{-1}}$, pa strmo pada kroz nulu u
+> $n = n_s$. **Crvena kriva** („Ispad faze") je rezultantni moment u jednofaznom režimu: kreće iz
+> **nule pri $n = 0$** — pri zakočenom rotoru je $s = 1$, pa je $2-s = 1$: direktno i inverzno
+> polje su ravnopravni ($Z_d = Z_i$) i momenti im se tačno poništavaju, zbog čega motor kome je
+> ispala faza **ne može sam da se zaleti**; maksimum joj je znatno niži, oko $255\ \mathrm{Nm}$
+> na oko $900\ \mathrm{min^{-1}}$, a nulu seče tik ispod sinhrone brzine. **Siva horizontalna
+> linija** je moment tereta $M_T = M_{\mathrm{n}} = 190{,}7\ \mathrm{Nm}$; crni kružić sa oznakom
+> „1" na njoj je nazivna radna tačka — presek ljubičaste krive i linije tereta na
+> $n_{\mathrm{n}} = 970\ \mathrm{min^{-1}}$. Sam događaj ispada faze čita se ovako: iz tačke „1"
+> motor „propadne" vertikalno naniže na crvenu krivu (brzina se u prvom trenutku ne menja; crvena
+> kriva tu daje $M_1 = 163{,}7\ \mathrm{Nm} < M_T$), pa pošto momenta nedostaje, klizi po crvenoj
+> krivoj ulevo dok je linija tereta ponovo ne preseče — u novoj radnoj tački na
+> $n' = 965\ \mathrm{min^{-1}}$. Primeti još da su u okolini radne brzine obe krive strme i
+> približno prave — to opravdava linearizaciju iz koraka 11. Šta treba da zaključiš: ispad faze
+> spušta celu momentnu krivu (rezerva momenta pada sa $\approx 565$ na $\approx 255\ \mathrm{Nm}$),
+> polazni moment postaje nula, a nazivni teret motor nosi samo uz nešto veće klizanje.
 
-Sledeća slika prikazuje statorsku struju u funkciji brzine za oba napajanja (ljubičasto —
-trofazno, po fazi; crveno — jednofazno, struja $I_1$ kroz dve redno vezane faze). Čitajte je
-ovako: pri malim brzinama obe struje su ogromne (reda $180$–$200\ \mathrm{A}$, tj. $6$–$7$ puta
-veće od nazivne); kako se brzina približava sinhronoj, obe opadaju, ali crvena (jednofazna)
-opada **sporije** — u radnoj oblasti (oko $970\ \mathrm{min^{-1}}$) ona je osetno iznad
-ljubičaste ($51$–$58\ \mathrm{A}$ prema $31{,}6\ \mathrm{A}$), što je upravo kvantitativni
-rezultat tačaka b) i c).
+Sledeća slika prikazuje statorsku struju u funkciji brzine za oba napajanja.
 
 ![Struja statora pri trofaznom i jednofaznom napajanju](../slike/fig-57.5.png)
 
 **Slika 57.5 —** Zavisnost struje statora od brzine obrtanja pri trofaznom i jednofaznom
 napajanju.
 
-(Napomena uz sliku 57.5: obe krive teže nuli kad $n \to n_s$ zato što je u modelu zanemarena
-struja magnećenja; kod stvarnog motora struja bi pri $s \to 0$ težila struji magnećenja, a ne
-nuli.)
+> **Kako čitati sliku 57.5:** Dijagram strujnih karakteristika. Horizontalna osa: brzina $n$ u
+> $\mathrm{min^{-1}}$ ($0$–$1000$); vertikalna osa: efektivna vrednost statorske struje $I_1$ u
+> $\mathrm{A}$ ($0$–$250$). **Ljubičasta kriva** („Trofazno napajanje") je struja po fazi pri
+> zdravom napajanju: pri $n = 0$ (zakočen rotor) iznosi $\approx 204\ \mathrm{A}$ (provera iz
+> šeme po fazi: $219{,}4/\sqrt{0{,}4^2 + 1^2} = 204\ \mathrm{A}$, tj. $6{,}4\,I_{\mathrm{n}}$),
+> vrlo blago opada do oko $600\ \mathrm{min^{-1}}$, a zatim sve strmije pada ka nuli u
+> $n_s = 1000\ \mathrm{min^{-1}}$; u nazivnoj tački ($970\ \mathrm{min^{-1}}$) prolazi kroz
+> $I_{\mathrm{n}} = 31{,}6\ \mathrm{A}$. **Crvena kriva** („Ispad faze") je struja $I_1$ kroz dve
+> redno vezane faze u jednofaznom režimu: pri $n = 0$ počinje čak nešto **niže** (na crtežu
+> $\approx 185\ \mathrm{A}$; redna šema daje $380/2{,}154 = 176\ \mathrm{A}$), ali opada znatno
+> sporije. Karakteristična tačka je **presek krivih na oko $600\ \mathrm{min^{-1}}$** (pri
+> $\approx 178\ \mathrm{A}$): levo od preseka jednofazna struja je malo manja od trofazne, a
+> desno — u celoj radnoj oblasti — crvena je iznad ljubičaste: na $970\ \mathrm{min^{-1}}$ očitava
+> se $51\ \mathrm{A}$ prema $31{,}6\ \mathrm{A}$ (tačka b), a u novoj radnoj tački i
+> $58\ \mathrm{A}$ (tačka c). Obe krive na slici teže nuli kad $n \to n_s$ zato što je u modelu
+> zanemarena struja magnećenja; kod stvarnog motora struja bi pri $s \to 0$ težila struji
+> magnećenja, a ne nuli. Šta treba da zaključiš: u radnoj oblasti se ispad faze plaća strujom
+> većom $1{,}6$–$1{,}8$ puta — mašina termički strada iako mehanički naizgled „sve radi".
 
 **Šta smo dobili:** kompletnu sliku — jednofazni režim znači manji raspoloživi moment, veću
 struju u radnoj tački i nemogućnost samostalnog zaleta.

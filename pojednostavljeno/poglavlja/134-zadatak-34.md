@@ -169,11 +169,13 @@ $$I_{0f} = \frac{I_0}{\sqrt{3}} = \frac{20{,}8}{\sqrt{3}} = 12{,}01\ \mathrm{A},
 
 **Zašto ovaj korak:** cela snaga $P_0$ koju motor u praznom hodu povlači iz mreže pokriva gubitke: Džulove (bakarne) gubitke u statorskom namotaju $P_{\mathrm{Cu}s0}$ i tzv. **uže gubitke praznog hoda** $P'_0$, koji u sebi sadrže mehaničke gubitke $P_{\mathrm{trv}}$ i gubitke u gvožđu $P_{\mathrm{Fe}}$ (mini-lekcija 3). Prvo skidamo bakarni deo, jer njega umemo tačno da izračunamo iz poznatog $R_s$ i struje.
 
-Pre računa, pogledajmo šemu ogleda. Naredna slika u gornjem delu prikazuje motor spregnut u trougao, priključen na mrežu, sa naznačenim izmerenim veličinama praznog hoda ($I_0 = 20{,}8\ \mathrm{A}$, $U_0 = 380\ \mathrm{V}$, $P_0 = 1{,}2\ \mathrm{kW}$); u donjem delu je ekvivalentna šema jedne faze u praznom hodu — obratite pažnju da rotorske grane **nema** (otvorena je, jer je $s\approx 0$), pa struja $I_{0f}$ kroz $R_s$ i $X_{\gamma s}$ stiže samo do poprečne grane $R_{\mathrm{Fe}} \| X_\mu$, gde se deli na $I_{\mathrm{Fe}}$ i $I_\mu$.
+Pre računa, pogledajmo šemu ogleda. Naredna slika u gornjem delu prikazuje motor spregnut u trougao, priključen na mrežu, sa naznačenim izmerenim veličinama praznog hoda; u donjem delu je ekvivalentna šema jedne faze u praznom hodu — detaljno čitanje dato je odmah ispod slike.
 
 ![Naponi, struje i ekvivalentna šema asinhronog motora u ogledu praznog hoda](../slike/fig-34.1.png)
 
 **Slika 34.1 —** Naponi, struje i ekvivalentna šema asinhronog motora u ogledu praznog hoda. Gore: motor u sprezi trougao na mreži, sa merenim linijskim veličinama. Dole: ekvivalentna šema jedne faze — rotorski deo je otvoren jer je pri $s\approx 0$ otpor opterećenja $R'_r(1-s)/s$ praktično beskonačan.
+
+> **Kako čitati sliku 34.1:** **Gornja šema (sam ogled):** dva mrežna provodnika sa izmerenim, linijskim/ukupnim veličinama — crvena strelica struje $\bar{I}_0 = 20{,}8\ \mathrm{A}$ na gornjem provodniku, crvena strelica napona $\bar{U}_0 = 380\ \mathrm{V}$ (sa oznakom $+$) između provodnika i strelica snage $P_0 = 1{,}2\ \mathrm{kW}$ usmerena ka motoru (snaga ulazi u mašinu). Motor je nacrtan kao trougao sa temenima $U$, $V$, $W$: puni kalemovi na stranicama su statorski namotaji u sprezi $\Delta$, a isprekidani cik-cak simboli u zvezdi unutar trougla predstavljaju rotorski kavez. **Donja šema (ekvivalentno kolo jedne faze):** pratite struju od ulaza — fazna struja $\bar{I}_{0f}$ prolazi kroz redno vezane otpornik $R_s$ i kalem $X_{\gamma s}$ (tu nastaju bakarni gubici, izračunatih $203\ \mathrm{W}$ za sve tri faze, i mali pad napona zbog kojeg smemo uzeti $E_0 \approx U_{0f}$), pa stiže do poprečne grane — paralelne veze $R_{\mathrm{Fe}}$ (levo) i $X_\mu$ (desno) — na kojoj vlada elektromotorna sila $\bar{E}_{0sf}$; tu se deli na aktivnu struju $\bar{I}_{\mathrm{Fe}}$ (posle računa: $0{,}74\ \mathrm{A}$ — gubici u gvožđu) i reaktivnu $\bar{I}_\mu$ ($11{,}96\ \mathrm{A}$ — magnećenje), koje se na donjem čvoru ponovo sastaju u $\bar{I}_{0f}$; $\bar{U}_{0sf}$ je fazni napon na ulazu (u sprezi $\Delta$ jednak linijskom, $380\ \mathrm{V}$). Rotorske grane u šemi **nema** — otvorena je, jer je pri $s \approx 0$ otpor opterećenja $R'_r(1-s)/s$ praktično beskonačan. **Šta treba da zaključiš:** u praznom hodu gotovo sva struja pripada poprečnoj grani, pa se iz ovog ogleda čitaju upravo njeni parametri, $R_{\mathrm{Fe}}$ i $X_\mu$.
 
 Opšti oblik:
 
@@ -271,11 +273,13 @@ Oba puta daju isto — što i mora, jer su to samo dva zapisa iste geometrije tr
 
 $$R'_r\,\frac{1-s}{s} = R'_r\cdot\frac{1-1}{1} = 0,$$
 
-a poprečnu granu zanemarujemo jer je fluks oko osam puta manji od nominalnog (mini-lekcija 6). Naredna slika prikazuje ogled: gore je motor u trouglu sa izmerenim veličinama kratkog spoja ($I_k = 70\ \mathrm{A}$, $U_k = 100\ \mathrm{V}$, $P_k = 6\ \mathrm{kW}$), dole ekvivalentna šema jedne faze — čisto **redno kolo** $R_s$, $X_{\gamma s}$, $X'_{\gamma r}$, $R'_r$, bez poprečne grane, pa je statorska struja jednaka (svedenoj) rotorskoj: $I_{ksf} = I'_{krf}$.
+a poprečnu granu zanemarujemo jer je fluks oko osam puta manji od nominalnog (mini-lekcija 6). Naredna slika prikazuje ogled: gore je motor u trouglu sa izmerenim veličinama kratkog spoja, dole ekvivalentna šema jedne faze — detaljno čitanje dato je odmah ispod slike.
 
 ![Naponi, struje i ekvivalentna šema asinhronog motora u ogledu kratkog spoja](../slike/fig-34.2.png)
 
 **Slika 34.2 —** Naponi, struje i ekvivalentna šema asinhronog motora u ogledu kratkog spoja. Poprečna grana je izostavljena (fluks je oko $8$ puta manji od nominalnog), pa ostaje redna veza $R_s + X_{\gamma s} + X'_{\gamma r} + R'_r$.
+
+> **Kako čitati sliku 34.2:** **Gornja šema:** isti motor u sprezi trougao (temena $U$, $V$, $W$; puni kalemovi su statorski namotaji, isprekidana cik-cak zvezda je ukočeni rotor), sada pri sniženom naponu — crvene strelice označavaju izmerene veličine: struju $\bar{I}_k = 70\ \mathrm{A}$, napon $\bar{U}_k = 100\ \mathrm{V}$ (sa oznakom $+$) i snagu $P_k = 6\ \mathrm{kW}$ koja ulazi u motor. **Donja šema:** ekvivalentno kolo jedne faze u kratkom spoju — čisto redno kolo, sleva nadesno: $R_s$ i $X_{\gamma s}$ (statorski deo), pa $X'_{\gamma r}$ i $R'_r$ (svedeni rotorski deo), zatvoreno provodnikom na desnom kraju, jer je otpor opterećenja $R'_r(1-s)/s$ pri $s = 1$ jednak nuli. Strelica $\bar{I}_{ksf} = \bar{I}'_{krf}$ iznad sredine kola naglašava da kroz sve elemente teče **ista** struja — poprečna grana je izostavljena, pa nema grananja. $\bar{U}_{ksf}$ je fazni napon na ulazu (u sprezi $\Delta$ jednak linijskom, $100\ \mathrm{V}$), a $\bar{E}_{ksf}$ elektromotorna sila u unutrašnjoj tački između statorskog i rotorskog dela kola. Impedansa koju izvor "vidi" je upravo $Z_k = \sqrt{R_k^2 + X_k^2}$, sa vrednostima izračunatim u nastavku: $R_k = 1{,}22\ \Omega$, $X_k = 2{,}15\ \Omega$, $Z_k = 2{,}47\ \Omega$. **Šta treba da zaključiš:** ogled kratkog spoja meri isključivo rednu granu šeme — iz njega dobijamo $R_k$ i $X_k$, koje zatim delimo na statorski i rotorski deo.
 
 Sva primljena snaga pokriva bakarne gubitke statora i rotora (gvožđe zanemareno — gubici u njemu opadaju sa kvadratom indukcije; mehanike nema — rotor stoji):
 
@@ -331,11 +335,13 @@ $$X_k = X_{\gamma s} + X'_{\gamma r} = \sqrt{Z_k^2 - R_k^2} = \sqrt{2{,}47^2 - 1
 
 $$X_{\gamma s} = X'_{\gamma r} = \frac{X_k}{2} = \frac{2{,}15}{2} = 1{,}08\ \Omega.$$
 
-Time su određeni svi parametri. Naredna slika prikazuje kompletnu ekvivalentnu šemu jedne faze sa upisanim brojnim vrednostima — sleva: $R_s = 0{,}47\ \Omega$ i $X_{\gamma s} = 1{,}08\ \Omega$ (stator), u sredini poprečna grana $R_{\mathrm{Fe}} = 511{,}6\ \Omega$ paralelno sa $X_\mu$, desno $X'_{\gamma r} = 1{,}08\ \Omega$, $R'_r = 0{,}75\ \Omega$ i promenljivi otpor opterećenja $\frac{1-s}{s}\cdot 0{,}75\ \Omega$.
+Time su određeni svi parametri. Naredna slika prikazuje kompletnu ekvivalentnu šemu jedne faze sa upisanim brojnim vrednostima; detaljno čitanje dato je odmah ispod slike.
 
 ![Kompletna ekvivalentna šema sa izračunatim parametrima](../slike/fig-34.3.png)
 
 **Slika 34.3 —** Parametri ekvivalentne šeme. Napomena: na ovoj slici (preuzetoj iz zbirke) uz reaktansu magnećenja stoji $31{,}5\ \Omega$; ispravna, u tekstu izračunata vrednost je $X_\mu = 31{,}7\ \Omega$ (videti napomenu o originalu u Koraku 5).
+
+> **Kako čitati sliku 34.3:** Kompletna T-šema jedne faze sa izračunatim brojnim vrednostima (svi otpori i reaktanse u $\Omega$); struju pratite sleva nadesno. Fazna struja statora $\bar{I}_{sf}$ ulazi kroz $R_s = 0{,}47\ \Omega$ (cik-cak simbol) i $X_{\gamma s} = 1{,}08\ \Omega$ (kalem); na čvoru se deli: deo $\bar{I}_{0f}$ silazi u poprečnu granu — paralelnu vezu $R_{\mathrm{Fe}} = 511{,}6\ \Omega$ i $X_\mu$ (na slici označeno $31{,}5\ \Omega$; ispravna vrednost iz teksta je $31{,}7\ \Omega$) — gde se dalje grana na $\bar{I}_{\mathrm{Fe}}$ i $\bar{I}_\mu$; ostatak $\bar{I}'_{rf}$ nastavlja kroz rotorsku granu: $X'_{\gamma r} = 1{,}08\ \Omega$, $R'_r = 0{,}75\ \Omega$ i na kraju promenljivi otpornik $\frac{1-s}{s} \cdot 0{,}75\ \Omega$ (simbol otpornika sa kosom strelicom = promenljiv), koji predstavlja mehaničko opterećenje i jedini se menja sa klizanjem $s$. Crvene strelice označavaju usvojene pozitivne smerove: $\bar{U}_{sf}$ na priključcima (levo) i $\bar{E}_{sf}$ na poprečnoj grani (zaobljene crvene strelice u sredini). **Šta treba da zaključiš:** ovo je gotov matematički model motora — za bilo koje opterećenje dovoljno je uvrstiti klizanje $s$ u desni otpornik i iz šeme izračunati struju, snage, faktor snage i moment.
 
 **Šta smo dobili:** popunjenu ekvivalentnu šemu — od sada za ovaj motor možemo računati struju, moment, faktor snage i stepen iskorišćenja pri **bilo kom** opterećenju, samo menjajući klizanje $s$ u otporu $\frac{1-s}{s}R'_r$. To je i cela poenta ova dva ogleda: dva jeftina merenja → kompletan matematički model motora.
 

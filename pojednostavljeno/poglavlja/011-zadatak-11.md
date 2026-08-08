@@ -85,19 +85,66 @@ $$P_{\mathrm{pr}} = \frac{3\,U_{\mathrm{f}}\, E_{0\mathrm{f}}}{X_s}, \qquad M_{\
 
 To su **prevalna snaga** i **prevalni moment**. Naziv „prevalni" dolazi otud što se tu karakteristika „prevaljuje": za $\delta < \pi/2$ mašina radi stabilno (poveća li se opterećenje, $\delta$ malo poraste i mašina razvije veći moment — sama se uravnoteži), a za $\delta > \pi/2$ svako dalje povećanje ugla *smanjuje* moment, ravnoteža je nemoguća i mašina ispada iz sinhronizma.
 
-Sledeća slika prikazuje tu ugaonu karakteristiku u relativnim jedinicama: na apscisi je ugao opterećenja $\delta$ od $0$ do $\pi$, na ordinati relativna snaga $p$ i relativni moment $m$ (jedna ista sinusna kriva važi za obe veličine — objašnjenje zašto je u mini-lekciji 5). Vrh krive je u $\delta = \pi/2$ i iznosi $u\,e_0/x_s$ — to je prevalna vrednost $p_{\mathrm{pr}}$ odnosno $m_{\mathrm{pr}}$, označena isprekidanim linijama.
+Sledeća slika prikazuje tu ugaonu karakteristiku u relativnim jedinicama (jedna ista sinusna kriva važi i za snagu i za moment — objašnjenje zašto je u mini-lekciji 5); detaljno čitanje je u bloku ispod slike.
 
 ![Ugaona karakteristika snage i momenta sinhrone mašine u relativnim jedinicama, sa prevalnom vrednošću u=π/2](../slike/fig-11.2.png)
 
 **Slika 11.2 —** Relativne vrednosti snage i momenta su iste za nazivnu sinhronu brzinu obrtanja: obe veličine slede istu krivu $\dfrac{u\, e_0}{x_s}\sin\delta$, sa maksimumom (prevalnom vrednošću $p_{\mathrm{pr}}, m_{\mathrm{pr}}$) pri $\delta = \pi/2$, jer je pri $\omega = \omega_{\mathrm{n}} = 1$ r.j. upravo $p = m$.
 
+> **Kako čitati sliku 11.2:** Crtež je crno-beo. Na horizontalnoj osi je ugao opterećenja
+> $\delta$ u radijanima, sa obeleženim vrednostima $0$, $\pi/2$ i $\pi$; na vertikalnoj osi
+> su relativna snaga $p$ i relativni moment $m$ (obe bezdimenzione, u r.j.) — pri nazivnoj
+> brzini one su brojčano jednake, na šta podseća i natpis "$p=m$ za
+> $\omega=\omega_{\mathrm{n}}=1$" u gornjem desnom uglu. Jedina kriva na slici je pozitivna
+> poluperioda sinusoide $p(\delta) = m(\delta) = \dfrac{u\,e_0}{x_s}\sin\delta$: kreće iz
+> nule u $\delta = 0$ (neopterećena mašina), raste, dostiže teme u $\delta = \pi/2$ i
+> simetrično se vraća na nulu u $\delta = \pi$. Isprekidane linije spuštaju teme na ose:
+> horizontalna isprekidana linija seče vertikalnu osu u prevalnoj vrednosti (oznaka
+> $p_{\mathrm{pr}}, m_{\mathrm{pr}}$), a vertikalna isprekidana pokazuje da je teme tačno
+> u $\delta = \pi/2$; sam vrh nosi izraz $\dfrac{u\cdot e_0}{x_s}$ — za naš nazivni režim
+> ($u = 1$, $e_0 = 2{,}72$, $x_s = 2$) to je $m_{\mathrm{pr}} = p_{\mathrm{pr}} = 1{,}36$
+> r.j. Nazivna radna tačka ($m_{\mathrm{n}} = 0{,}8$ r.j., čemu iz
+> $\sin\delta = m_{\mathrm{n}}/m_{\mathrm{pr}}$ odgovara $\delta \approx 36^{\circ}$) nije
+> posebno ucrtana, ali leži na uzlaznom delu krive, udobno levo od temena. Šta treba da
+> zaključiš: uzlazni deo krive ($\delta < \pi/2$) je stabilno radno područje, teme u
+> $\delta = \pi/2$ je granica statičke stabilnosti (prevalna snaga i prevalni moment), a
+> desno od temena snaga opada sa uglom — tu ravnoteže nema i mašina ispada iz sinhronizma.
+
 ### Mini-lekcija 4: Vektorski dijagram nadpobuđenog generatora i kosinusna teorema
 
-Da bismo izračunali prevalni moment, treba nam vrednost $E_{0\mathrm{f}}$ — a nju ne merimo direktno, već je **rekonstruišemo iz naponske jednačine**, tj. iz vektorskog dijagrama. Na sledećoj slici je vektorski dijagram napona sinhronog generatora u *nadpobuđenom* režimu (pobuda jača nego što treba za sam napon, pa generator pored aktivne daje i induktivnu reaktivnu snagu mreži — struja $\mathbf{I}_{\mathrm{f}}$ **kasni** za naponom $\mathbf{U}_{\mathrm{f}}$ za ugao $\varphi$; to je uobičajen radni režim generatora u elektrani). Čitaj ga ovako: iz zajedničke početne tačke polaze fazor napona $\mathbf{U}_{\mathrm{f}}$ (vertikalno) i fazor struje $\mathbf{I}_{\mathrm{f}}$ (udesno od njega, kasni za ugao $\varphi$); na vrh $\mathbf{U}_{\mathrm{f}}$ nadovezuje se pad napona $jX_s\mathbf{I}_{\mathrm{f}}$, koji je upravan na struju (zarotiran $90^\circ$ unapred u odnosu na $\mathbf{I}_{\mathrm{f}}$); zbir $\mathbf{U}_{\mathrm{f}} + jX_s\mathbf{I}_{\mathrm{f}}$ zatvara trougao i daje $\mathbf{E}_{0\mathrm{f}}$, koji prednjači naponu za ugao opterećenja $\delta$. Ugao unutar trougla, između stranica $U_{\mathrm{f}}$ i $X_s I_{\mathrm{f}}$, iznosi $\pi/2 + \varphi$ (na slici posebno označen).
+Da bismo izračunali prevalni moment, treba nam vrednost $E_{0\mathrm{f}}$ — a nju ne merimo direktno, već je **rekonstruišemo iz naponske jednačine**, tj. iz vektorskog dijagrama. Na sledećoj slici je vektorski dijagram napona sinhronog generatora u *nadpobuđenom* režimu (pobuda jača nego što treba za sam napon, pa generator pored aktivne daje i induktivnu reaktivnu snagu mreži — struja $\mathbf{I}_{\mathrm{f}}$ **kasni** za naponom $\mathbf{U}_{\mathrm{f}}$ za ugao $\varphi$; to je uobičajen radni režim generatora u elektrani). Detaljan vodič za čitanje dijagrama dat je u bloku ispod slike.
 
 ![Vektorski dijagram napona sinhronog generatora u nadpobuđenom režimu: fazori napona, struje, pada napona jXsIf i elektromotorne sile E0f, sa uglovima φ, δ i π/2+φ](../slike/fig-11.1.png)
 
 **Slika 11.1 —** Vektorski dijagram napona sinhronog generatora, nadpobuđen režim. Trougao čine $\mathbf{U}_{\mathrm{f}}$, pad napona $jX_s\mathbf{I}_{\mathrm{f}}$ i $\mathbf{E}_{0\mathrm{f}}$; ugao između stranica $U_{\mathrm{f}}$ i $X_s I_{\mathrm{f}}$ je $\pi/2 + \varphi$, a ugao između $\mathbf{E}_{0\mathrm{f}}$ i $\mathbf{U}_{\mathrm{f}}$ je ugao opterećenja $\delta$.
+
+> **Kako čitati sliku 11.1:** Dijagram je crno-beo, fazori se raspoznaju po oznakama, a
+> pomoćne konstrukcije su isprekidane. (U gornjem levom uglu vidi se i odsečak formule
+> "$\ldots = 1{,}36\ [\mathrm{r.j.}]$" — to je ostatak računa prevalnog momenta sa iste
+> stranice zbirke, ne deo dijagrama.) Referentni fazor je napon $\mathbf{U}_{\mathrm{f}}$,
+> nacrtan vertikalno nagore iz donje početne tačke; fazori rotiraju suprotno kazaljci na
+> satu, pa fazor pomeren od $\mathbf{U}_{\mathrm{f}}$ udesno (u smeru kazaljke) za njim
+> kasni, a pomeren ulevo mu prednjači. Struja $\mathbf{I}_{\mathrm{f}}$ polazi iz iste
+> tačke ukoso dole-desno: kasni za naponom za ugao $\varphi$ (luk uz početnu tačku; u
+> nazivnom režimu $\varphi_{\mathrm{n}} = 36{,}87^{\circ}$, jer je
+> $\cos\varphi_{\mathrm{n}} = 0{,}8$). Na vrh $\mathbf{U}_{\mathrm{f}}$ nadovezuje se pad
+> napona $jX_s\mathbf{I}_{\mathrm{f}}$ — strelica ukoso gore-levo, **upravna na struju**
+> (množenje sa $j$ zakreće fazor struje za $90^\circ$ unapred); upravnost na slici
+> dokazuju isprekidani produžetak pravca struje udesno i mali znak pravog ugla na njemu.
+> Duž od početne tačke do vrha tog lanca je $\mathbf{E}_{0\mathrm{f}}$, koja prednjači
+> naponu za ugao opterećenja $\delta$ (luk između $\mathbf{U}_{\mathrm{f}}$ i
+> $\mathbf{E}_{0\mathrm{f}}$). Ugao označen $\pi/2+\varphi$ (strelica pokazuje na teme kod
+> vrha $\mathbf{U}_{\mathrm{f}}$) jeste unutrašnji ugao trougla između stranica
+> $U_{\mathrm{f}}$ i $X_s I_{\mathrm{f}}$ — upravo on ulazi u kosinusnu teoremu; mali ugao
+> $\varphi$ ucrtan pri vrhu dijagrama, između $jX_s\mathbf{I}_{\mathrm{f}}$ i isprekidane
+> vertikale (paralelne naponu), pokazuje da je pad napona nagnut od vertikale baš za
+> $\varphi$ — odatle u zbiru $\pi/2+\varphi$ potiče sabirak $\varphi$. Odnos dužina
+> odgovara nazivnom režimu: $u_{\mathrm{fn}} : x_s i_{\mathrm{fn}} : e_{0\mathrm{fn}} =
+> 1 : 2 : 2{,}72$ — pad napona je dvostruko duži od napona, pa je EMS bezmalo tri puta
+> duža od $\mathbf{U}_{\mathrm{f}}$, kao što se na crtežu i vidi. Šta treba da zaključiš:
+> trougao $u$–$x_s i$–$e_0$ sa uglom $\pi/2+\varphi_{\mathrm{n}} = 126{,}87^{\circ}$
+> između poznatih stranica je sve što kosinusnoj teoremi u Koraku 4 treba da izračuna
+> $e_{0\mathrm{fn}} = 2{,}72$ r.j.
 
 Iz tog trougla $E_{0\mathrm{f}}$ dobijamo **kosinusnom teoremom**. Podsetnik: kosinusna teorema kaže da u trouglu sa stranicama $a$ i $b$ koje zaklapaju ugao $\gamma$, naspramna stranica $c$ zadovoljava $c^2 = a^2 + b^2 - 2ab\cos\gamma$ (to je „Pitagorina teorema sa popravkom" za trouglove koji nisu pravougli). Ovde su stranice $a = U_{\mathrm{f}}$ i $b = X_s I_{\mathrm{f}}$, ugao između njih $\gamma = \pi/2 + \varphi$, a naspramna stranica je $c = E_{0\mathrm{f}}$:
 
