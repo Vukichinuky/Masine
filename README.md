@@ -12,6 +12,14 @@
 | `pojednostavljeno/poglavlja/` | Izvorna Markdown poglavlja (uvod za sinhrone, zadaci 1–27, uvod za asinhrone, zadaci 28–59) |
 | `pojednostavljeno/slike/` | Svih 107 slika (grafikoni, šeme, fazorski dijagrami) izvučenih iz originala |
 
+## Električne mašine 3 — II deo ispita (merenja)
+
+| Putanja | Sadržaj |
+|---|---|
+| `em3-drugi-deo/Elektricne-masine-3-II-deo-priprema.pdf` | **Kompletna priprema za II deo ispita (112 str.): 8 tematskih poglavlja sa rešenim ispitnim rokovima (jan/sep 2023) i varijacijama** |
+| `em3-drugi-deo/poglavlja/` | Markdown poglavlja (UI metoda, tahogeneratori, izolacija, zaustavljanje, zagrevanje, klizanje, neutralna zona) |
+| `em3-drugi-deo/slike/` | Šeme i formule iz beležaka sa predavanja |
+
 ## Indeks zadataka
 
 Zbirka ima 59 zadataka: 1–27 sinhrone mašine, 28–59 asinhrone mašine (poslednji je u knjizi štamparskom greškom označen kao „Zadatak 69“).
